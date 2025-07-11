@@ -3,6 +3,7 @@ import jon from "../assets/jon_snow.jpg"; // Assuming you have an image named jo
 import { FaGithub, FaLinkedin, FaEnvelope,FaMediumM  } from 'react-icons/fa';
 import { FaXTwitter } from "react-icons/fa6";
 import { motion } from "framer-motion";
+import karthik from "../assets/kv.jpg"; // Assuming you have an image named karthik.png in the assets folder
 
 const Home = () => {
   return (
@@ -11,13 +12,13 @@ const Home = () => {
       <div className="flex-grow flex flex-col justify-center items-center ">
         
        <div>
-       <img src={jon} width={300} className="rounded-full object-cover relative -top-15"/>
+       <img src={karthik} width={240} className="rounded-full object-cover relative -top-15"/>
        </div>
 
-       <div>
-        <h1 className="text-4xl text-[#8F00F0] mt-10 text-center font-raleway">Karthik Vishal Subramaniyan</h1>
-        <p className="text-white mt-6 font-aboreto text-xs text-center">Forging new ideas,contributing to the society</p>
-
+       <div className="">
+        <h1 className="text-4xl font-raleway bg-gradient-to-r from-[#8F00F0]  to-red-500 bg-clip-text text-transparent ">Karthik Vishal Subramaniyan</h1>
+        <p className="text-white mt-6 font-raleway text-s text-center">Forging new ideas,contributing to the society</p>
+        
         <div>
         <div className="flex justify-center items-center gap-3 mt-20 sm:gap-4">
           {/* GitHub */}
