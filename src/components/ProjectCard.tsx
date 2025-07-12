@@ -12,9 +12,9 @@ type ProjectCardProps = {
   
   const ProjectCard = ({ title, description,pic,stacks }: ProjectCardProps) => {
     return (
-      <div className="bg-black hover:scale-110 border border-gray-700 rounded-4xl p-4  mb-4 w-full max-w-xl transition delay-50 duration-400 hover:bg-[#222224]">
+      <div className="bg-black hover:scale-110 border border-gray-700 rounded-4xl p-4  mb-4 w-full max-w-4xl transition delay-50 duration-400 hover:bg-[#222224]">
         <h2 className="text-xl font-semibold text-white text-center">{title}</h2>
-        <img src={pic.src} alt="Project Thumbnail" className="w-full h-48 object-cover rounded-full mt-2" />
+        <img src={pic.src} alt="Project Thumbnail" className="w-full h-w object-cover rounded-full mt-2" />
 
         <div>
           <div className="flex text-center justify-center items-center flex-wrap mt-4">

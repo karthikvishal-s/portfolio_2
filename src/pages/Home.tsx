@@ -7,16 +7,16 @@ import karthik from "../assets/kv.jpg"; // Assuming you have an image named kart
 
 const Home = () => {
   return (
-    <div className="min-h-screen min-w-screen flex flex-col">
+    <div className="min-h-screen min-w-screen flex flex-col mx-auto">
       <Navbar sl={0} />
       <div className="flex-grow flex flex-col justify-center items-center ">
         
        <div>
-       <img src={karthik} width={240} className="rounded-full object-cover relative -top-15"/>
+       <img src={karthik} width={190} className="rounded-full object-cover relative -top-15"/>
        </div>
 
        <div className="">
-        <h1 className="text-4xl font-raleway bg-gradient-to-r from-[#8F00F0]  to-red-500 bg-clip-text text-transparent ">Karthik Vishal Subramaniyan</h1>
+        <h1 className="text-4xl font-raleway bg-gradient-to-r from-[#8F00F0]  to-red-500 bg-clip-text text-transparent text-center ">Karthik Vishal Subramaniyan</h1>
         <p className="text-white mt-6 font-raleway text-s text-center">Forging new ideas,contributing to the society</p>
         
         <div>

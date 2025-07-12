@@ -66,7 +66,7 @@ const Projects = () => {
       <p className='text-center font-raleway text-4xl mt-10 mb-10'>Projects</p>
       <div className="flex-grow p-8 flex justify-center items-start">
         
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-16 w-full max-w-6xl">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-16 w-full max-w-6xl">
           {ProjectData.map((project, index) => (
             <ProjectCard
               key={index}
