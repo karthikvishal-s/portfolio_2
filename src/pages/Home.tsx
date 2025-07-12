@@ -63,7 +63,7 @@ const Home = () => {
           {/* EmailEmail */}
           <div className={`font-NewElegance hover:-translate-y-1 hover:scale-120 text-2xl text-center transition-all  duration-[1700ms] ease-out`}>
             <motion.a
-              href="mailto:karthikvishal1506@gmail.com"
+              href="https://medium.com/@karthikvishal1506"
               whileHover={{ scale: 1.5, rotate: -10 }}
               className="text-white hover:text-[#8F00F0]"
             >
@@ -74,7 +74,7 @@ const Home = () => {
            {/* EmailEmail */}
            <div className={`font-NewElegance hover:-translate-y-1 hover:scale-120 text-2xl text-center transition-all  duration-[1700ms] ease-out`}>
             <motion.a
-              href="mailto:karthikvishal1506@gmail.com"
+              href="https://x.com/KarthikVis66697"
               whileHover={{ scale: 1.5, rotate: -10 }}
               className="text-white hover:text-[#8F00F0]"
             >
