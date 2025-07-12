@@ -34,7 +34,7 @@ const About = () => {
           <h2 className="text-2xl font-semibold text-[#8F00F0] mb-3">🎓 Education</h2>
           <ul className="list-disc list-inside space-y-2">
             <li>B.Tech in Computer Science and Engineering – Amrita Vishwa Vidyapeetham (2022–2026)</li>
-            <li>CGPA: 8.5/10 (as of Semester 4)</li>
+            <li>CGPA: 8.45/10 (as of Semester 4)</li>
           </ul>
         </section>
 
