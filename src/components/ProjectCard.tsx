@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import {Github,Globe,ChevronRight} from'lucide-react';
-import kv from "../assets/kv.jpg"
+
 
 
 type ProjectCardProps = {

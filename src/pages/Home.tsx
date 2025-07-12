@@ -1,5 +1,5 @@
 import Navbar from "../components/Navbar";
-import jon from "../assets/jon_snow.jpg"; // Assuming you have an image named jon_snow.jpg in the assets folder
+
 import { FaGithub, FaLinkedin, FaEnvelope,FaMediumM  } from 'react-icons/fa';
 import { FaXTwitter } from "react-icons/fa6";
 import { motion } from "framer-motion";
