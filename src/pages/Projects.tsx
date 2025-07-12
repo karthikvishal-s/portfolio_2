@@ -88,8 +88,8 @@ const ProjectData = [
     pic: { src: port2 },
     description: "Personal portfolio website, showcasing various animations and transformations. Enhanced with multiple React extensions for better interactivity.",
     stacks: ["ReactJS", "TailwindCSS", "Framer Motion", "React Router", "lucide-react","MaterialUI"],
-    live:"https://buynoire.vercel.app/",
-    code:"https://github.com/karthikvishal-s/Noire"
+    live:"https://karthikvishal1.vercel.app/",
+    code:"https://github.com/karthikvishal-s/portfolio_2"
 
   }
   
