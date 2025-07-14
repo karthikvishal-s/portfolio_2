@@ -18,7 +18,7 @@ const Navbar = ({ sl }:{sl:number }) => {
           <p className={` transition-all duration-300 hover:scale-110 hover:text-[#FF03F0] ${sl==3?'text-[#EF00FF]':'text-[#8F00FF]'}`}>Skills</p>
         </Link>
         <Link to="/interests">
-          <p className={` transition-all duration-300 hover:scale-110 hover:text-[#FF03F0] ${sl==4?'text-[#EF00FF]':'text-[#8F00FF]'}`}>Interests</p>
+          <p className={` transition-all duration-300 hover:scale-110 hover:text-[#FF03F0] ${sl==4?'text-[#EF00FF]':'text-[#8F00FF]'}`}>Resume</p>
         </Link>
       </div>
     </div>

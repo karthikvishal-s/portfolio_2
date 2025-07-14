@@ -30,7 +30,7 @@ const About = () => {
         </div>
 
         {/* Education */}
-        <section className="mb-12">
+        <section className="mb-12 border p-4 rounded-lg bg-white/10">
           <h2 className="text-2xl font-semibold text-[#8F00F0] mb-3">🎓 Education</h2>
           <ul className="list-disc list-inside space-y-2">
             <li>B.Tech in Computer Science and Engineering – Amrita Vishwa Vidyapeetham (2022–2026)</li>
@@ -39,7 +39,7 @@ const About = () => {
         </section>
 
         {/* Experience */}
-        <section className="mb-12">
+        <section className="mb-12 border p-4 rounded-lg bg-white/10">
           <h2 className="text-2xl font-semibold text-red-400 mb-3">💼 Experience</h2>
           <div className="space-y-4">
             <div>
@@ -54,34 +54,10 @@ const About = () => {
           </div>
         </section>
 
-        {/* Skills */}
-        <section className="mb-12">
-          <h2 className="text-2xl font-semibold text-[#8F00F0] mb-3">🧠 Skills & Tech Stack</h2>
-          <div className="flex flex-wrap gap-2 text-sm font-mono">
-            {[
-              "ReactJS", "NextJS", "NodeJS", "ExpressJS", "MongoDB", "PostgreSQL", "TailwindCSS", "Firebase",
-              "TypeScript", "Docker", "Vercel", "JWT", "REST API", "Git & GitHub", "Framer Motion", "MaterialUI"
-            ].map((skill, idx) => (
-              <span key={idx} className="bg-white/10 px-3 py-1 rounded-xl border border-white/10">
-                {skill}
-              </span>
-            ))}
-          </div>
-        </section>
 
-        {/* Tools I Love */}
-        <section className="mb-12">
-          <h2 className="text-2xl font-semibold text-red-400 mb-3">🛠️ Tools I Love</h2>
-          <p>VS Code, GitHub, Postman, Vercel, Docker, Canva, Figma, Blender, Google Colab</p>
-        </section>
 
-        {/* Goals & Vision */}
-        <section className="mb-12">
-          <h2 className="text-2xl font-semibold text-[#8F00F0] mb-3">🚀 Vision & Goals</h2>
-          <p>
-            I'm working towards becoming a top-tier SDE and I want to build impactful apps, contribute to open source, and eventually start my own company focused on education, tech, and social impact.
-          </p>
-        </section>
+  
+
 
         {/* Connect */}
         <section>
