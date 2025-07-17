@@ -1,92 +1,118 @@
+import { useEffect, useState } from "react";
 import Navbar from "../components/Navbar";
 
-import { FaGithub, FaLinkedin, FaEnvelope,FaMediumM  } from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaEnvelope, FaMediumM } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { motion } from "framer-motion";
-import karthik from "../assets/kv.jpg"; // Assuming you have an image named karthik.png in the assets folder
+import karthik from "../assets/kv.jpg"; // Make sure this path and extension are correct
 
 const Home = () => {
-  return (
-    <div className="min-h-screen min-w-screen flex flex-col mx-auto">
-      <Navbar sl={0} />
-      <div className="flex-grow flex flex-col justify-center items-center ">
-        
-       <div>
-       <img src={karthik} width={190} className="rounded-full object-cover relative -top-15"/>
-       </div>
+  const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
+  const [loaded,setloaded] = useState(false);
 
-       <div className="">
-        <h1 className="text-4xl font-raleway bg-gradient-to-r from-[#8F00F0]  to-red-500 bg-clip-text text-transparent text-center ">Karthik Vishal Subramaniyan</h1>
-        <p className="text-white mt-6 font-raleway text-s text-center">Forging new ideas,contributing to the society</p>
-        
+
+  useEffect(()=>{
+    setloaded(true);
+
+  },[])
+
+  useEffect(() => {
+    const handleMouseMove = (e: MouseEvent) => {
+      setMousePosition({ x: e.clientX, y: e.clientY });
+    };
+
+    window.addEventListener("mousemove", handleMouseMove);
+    return () => window.removeEventListener("mousemove", handleMouseMove);
+  }, []);
+
+  return (
+    <div className="min-h-screen min-w-screen bg-black text-white relative overflow-hidden">
+      {/* Mouse-following purple glow */}
+      <motion.div
+        className="pointer-events-none fixed top-0 left-0 w-full h-full z-0"
+        animate={{
+          background: `radial-gradient(500px at ${mousePosition.x}px ${mousePosition.y}px, rgba(103, 37, 133, 0.41), transparent 
+          100%)`,
+        }}
+        transition={{ type: "tween", ease: "linear", duration: 0.2 }}
+      />
+
+      {/* Navbar */}
+      <Navbar sl={0} />
+
+      {/* Main Content */}
+      <div className="flex-grow flex flex-col justify-center items-center relative z-10 px-4 mt-60">
+        {/* Profile Image */}
         <div>
-        <div className="flex justify-center items-center gap-3 mt-20 sm:gap-4">
-          {/* GitHub */}
-          <div className={` hover:-translate-y-1  hover:scale-120 text-xl text-center transition-all duration-[1700ms] ease-out`}>
+          <img
+            src={karthik}
+            width={190}
+            className="rounded-full object-cover relative -top-15"
+            alt="Karthik Vishal"
+          />
+        </div>
+
+        {/* Title & Tagline */}
+        <div className="text-center">
+          <h1 className={`text-4xl font-raleway bg-gradient-to-r from-[#8F00F0] to-red-500 bg-clip-text text-transparent transition-all duration-2000  ${loaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-[70%]'}`}>
+            Karthik Vishal Subramaniyan
+          </h1>
+          <p className={`text-white mt-6 font-raleway text-sm transition-all duration-2000 ${loaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-[70%]'} `}>
+            Forging new ideas, contributing to the society
+          </p>
+
+          {/* Social Icons */}
+          <div className="flex justify-center items-center gap-3 mt-20 sm:gap-4">
+            {/* GitHub */}
             <motion.a
               href="https://github.com/karthikvishal-s"
               target="_blank"
               rel="noopener noreferrer"
               whileHover={{ scale: 1.5, rotate: 10 }}
-              className="text-white hover:text-[#8F00F0]"
+              className="text-white hover:text-[#8F00F0] transition-all duration-700"
             >
               <FaGithub className="text-3xl" />
             </motion.a>
-          </div>
 
-          {/* LinkedIn */}
-          <div className={`font-NewElegance hover:-translate-y-1  hover:scale-120 text-2xl text-center transition-all  duration-[1700ms] ease-out`}>
+            {/* LinkedIn */}
             <motion.a
               href="https://linkedin.com/in/karthik-vishal-s-851921287"
               target="_blank"
               rel="noopener noreferrer"
               whileHover={{ scale: 1.5, rotate: 10 }}
-              className="text-white hover:text-[#8F00F0]">
-            
-            
+              className="text-white hover:text-[#8F00F0] transition-all duration-700"
+            >
               <FaLinkedin className="text-3xl" />
             </motion.a>
-          </div>
 
-          {/* Email */}
-          <div className={`font-NewElegance hover:-translate-y-1 hover:scale-120 text-2xl text-center transition-all  duration-[1700ms] ease-out`}>
+            {/* Email */}
             <motion.a
               href="mailto:karthikvishal1506@gmail.com"
               whileHover={{ scale: 1.5, rotate: -10 }}
-              className="text-white hover:text-[#8F00F0]"
-            
+              className="text-white hover:text-[#8F00F0] transition-all duration-700"
             >
               <FaEnvelope className="text-3xl" />
             </motion.a>
-          </div>
 
-          {/* EmailEmail */}
-          <div className={`font-NewElegance hover:-translate-y-1 hover:scale-120 text-2xl text-center transition-all  duration-[1700ms] ease-out`}>
+            {/* Medium */}
             <motion.a
               href="https://medium.com/@karthikvishal1506"
               whileHover={{ scale: 1.5, rotate: -10 }}
-              className="text-white hover:text-[#8F00F0]"
+              className="text-white hover:text-[#8F00F0] transition-all duration-700"
             >
               <FaMediumM className="text-3xl" />
             </motion.a>
-          </div>
 
-           {/* EmailEmail */}
-           <div className={`font-NewElegance hover:-translate-y-1 hover:scale-120 text-2xl text-center transition-all  duration-[1700ms] ease-out`}>
+            {/* Twitter */}
             <motion.a
               href="https://x.com/KarthikVis66697"
               whileHover={{ scale: 1.5, rotate: -10 }}
-              className="text-white hover:text-[#8F00F0]"
+              className="text-white hover:text-[#8F00F0] transition-all duration-700"
             >
               <FaXTwitter className="text-3xl" />
             </motion.a>
           </div>
-
-
         </div>
-       </div>
-       </div>
-
       </div>
     </div>
   );
