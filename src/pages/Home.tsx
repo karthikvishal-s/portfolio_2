@@ -31,23 +31,25 @@ const Home = () => {
       <motion.div
         className="pointer-events-none fixed top-0 left-0 w-full h-full z-0"
         animate={{
-          background: `radial-gradient(500px at ${mousePosition.x}px ${mousePosition.y}px, rgba(103, 37, 133, 0.41), transparent 
+          background: `radial-gradient(500px at ${mousePosition.x}px ${mousePosition.y}px, rgba(103, 37, 133, 0.26), transparent 
           100%)`,
         }}
         transition={{ type: "tween", ease: "linear", duration: 0.2 }}
       />
 
       {/* Navbar */}
+      <div className={`transition-all duration-2000 ${loaded ? 'opacity-100 ' : 'opacity-0 '}`}>
       <Navbar sl={0} />
+      </div>
 
       {/* Main Content */}
       <div className="flex-grow flex flex-col justify-center items-center relative z-10 px-4 mt-60">
         {/* Profile Image */}
-        <div>
+        <div >
           <img
             src={karthik}
             width={190}
-            className="rounded-full object-cover relative -top-15"
+            className={`rounded-full object-cover relative -top-15 transition-all duration-2000 ${loaded? 'opacity-100 ' : 'opacity-0 '}`}
             alt="Karthik Vishal"
           />
         </div>
@@ -69,7 +71,7 @@ const Home = () => {
               target="_blank"
               rel="noopener noreferrer"
               whileHover={{ scale: 1.5, rotate: 10 }}
-              className="text-white hover:text-[#8F00F0] transition-all duration-700"
+              className={`text-white hover:text-[#8F00F0] transition-all duration-2000 ${loaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-[70%]'}`}
             >
               <FaGithub className="text-3xl" />
             </motion.a>
@@ -80,7 +82,7 @@ const Home = () => {
               target="_blank"
               rel="noopener noreferrer"
               whileHover={{ scale: 1.5, rotate: 10 }}
-              className="text-white hover:text-[#8F00F0] transition-all duration-700"
+              className={`text-white hover:text-[#8F00F0] transition-all duration-2000 ${loaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-[70%]'}`}
             >
               <FaLinkedin className="text-3xl" />
             </motion.a>
@@ -89,7 +91,7 @@ const Home = () => {
             <motion.a
               href="mailto:karthikvishal1506@gmail.com"
               whileHover={{ scale: 1.5, rotate: -10 }}
-              className="text-white hover:text-[#8F00F0] transition-all duration-700"
+              className={`text-white hover:text-[#8F00F0] transition-all duration-2000 ${loaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-[70%]'}`}
             >
               <FaEnvelope className="text-3xl" />
             </motion.a>
@@ -98,7 +100,7 @@ const Home = () => {
             <motion.a
               href="https://medium.com/@karthikvishal1506"
               whileHover={{ scale: 1.5, rotate: -10 }}
-              className="text-white hover:text-[#8F00F0] transition-all duration-700"
+              className={`text-white hover:text-[#8F00F0] transition-all duration-2000 ${loaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-[70%]'}`}
             >
               <FaMediumM className="text-3xl" />
             </motion.a>
@@ -107,7 +109,7 @@ const Home = () => {
             <motion.a
               href="https://x.com/KarthikVis66697"
               whileHover={{ scale: 1.5, rotate: -10 }}
-              className="text-white hover:text-[#8F00F0] transition-all duration-700"
+              className={`text-white hover:text-[#8F00F0] transition-all duration-2000 ${loaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-[70%]'}`}
             >
               <FaXTwitter className="text-3xl" />
             </motion.a>
