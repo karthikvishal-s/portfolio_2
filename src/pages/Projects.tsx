@@ -10,8 +10,10 @@ import trr from "../assets/trr2.png";
 import united from "../assets/united.png";
 import dh from "../assets/dh.png"; 
 import port2 from "../assets/port2.png"; // Assuming you have a second portfolio image
+import { useEffect,useState} from 'react';
 
 const defaultPic = { src: kv };
+
 
 const ProjectData = [
   {
@@ -20,7 +22,8 @@ const ProjectData = [
     pic: { src: noire },
     stacks: ["NextJS","ReactJS","TailwindCSS", "NodeJS", "ExpressJS", "MongoDB","Stripe"],
     live:"https://buynoire.vercel.app/",
-    code:"https://github.com/karthikvishal-s/Noire"
+    code:"https://github.com/karthikvishal-s/Noire",
+    time:2000
   },
   {
     title: "The Raven's Roost",
@@ -29,7 +32,8 @@ const ProjectData = [
     stacks: ["NextJS", "ReactJS", "TailwindCSS","NextAuth", "NodeJS", "ExpressJS", "MongoDB","Vercel","Google OAuth" ],
     
     live:"https://varys.vercel.app/",
-    code:"https://github.com/karthikvishal-s/The-Ravens-Roost"
+    code:"https://github.com/karthikvishal-s/The-Ravens-Roost",
+    time:2000
   },
   {
     title: "Pensieve",
@@ -37,7 +41,8 @@ const ProjectData = [
     description: "A Public Book Repository for Enthusiasts.Designed to be community-driven, this platform enables users to contribute, discover, and interact with curated book collections.",
     stacks: ["ReactJS", "TailwindCSS", "NodeJS", "ExpressJS", "MongoDB"],
     live:"https://thepensieve.vercel.app/",
-    code:"https://github.com/karthikvishal-s/Pensieve"
+    code:"https://github.com/karthikvishal-s/Pensieve",
+    time:2000
   },
   {
     title: "DocHelp - in Progress",
@@ -45,7 +50,8 @@ const ProjectData = [
     description: "(Still in Progress)   Designed to help doctors efficiently manage patient data in an orthopedic clinic.",
     stacks: ["VueJs", "TailwindCSS", "NodeJS", "ExpressJS", "PostgreSQL"],
     live:"https://buynoire.vercel.app/",
-    code:"https://github.com/karthikvishal-s/DocHelp"
+    code:"https://github.com/karthikvishal-s/DocHelp",
+    time:2000
 
   },
   {
@@ -54,7 +60,8 @@ const ProjectData = [
     description: "Created for the Mega Hackathon 2025 under the theme of SDE Goals, this app focuses on Goal 4 (Education), providing a safe space for students dealing with anxiety and introversion.",
     stacks:["ReactJS", "TailwindCSS","Firebase", "FireStore DB"],
     live:"https://buynoire.vercel.app/",
-    code:"https://github.com/karthikvishal-s/UnitEd"
+    code:"https://github.com/karthikvishal-s/UnitEd",
+    time:2000
   },
   {
     title: "QR Generator",
@@ -62,7 +69,8 @@ const ProjectData = [
     description: "Built using Node and Express, this QR code generator allows users to create custom QR codes for various purposes.",
     stacks: ["NodeJS", "ExpressJS", "TailwindCSS", "MongoDB"],
     live:"https://buynoire.vercel.app/",
-    code:"https://github.com/karthikvishal-s/QR-generator"
+    code:"https://github.com/karthikvishal-s/QR-generator",
+    time:2000
   },
   
   {
@@ -71,7 +79,8 @@ const ProjectData = [
     description:"A FrontEnd Application for Sports Enthusiasts, providing a platform to explore and engage with various sports-related content.",
     stacks: ["HTML", "CSS", "Javascript"],
     live:"https://buynoire.vercel.app/",
-    code:"https://github.com/karthikvishal-s/SportsHub"
+    code:"https://github.com/karthikvishal-s/SportsHub",
+    time:2000
   },
   {
     title: "Portfolio - 1",
@@ -79,7 +88,8 @@ const ProjectData = [
     description: "Personal portfolio website, showcasing various animations and transformations. Enhanced with multiple React extensions for better interactivity.",
     stacks: ["ReactJS", "TailwindCSS", "Framer Motion", "React Router", "lucide-react"],
     live:"https://karthikvishal-s.vercel.app/",
-    code:"https://github.com/karthikvishal-s/Portfolio"
+    code:"https://github.com/karthikvishal-s/Portfolio",
+    time:2000
 
   },
   
@@ -89,20 +99,32 @@ const ProjectData = [
     description: "Personal portfolio website, showcasing various animations and transformations. Enhanced with multiple React extensions for better interactivity.",
     stacks: ["ReactJS", "TailwindCSS", "Framer Motion", "React Router", "lucide-react","MaterialUI"],
     live:"https://karthikvishal1.vercel.app/",
-    code:"https://github.com/karthikvishal-s/portfolio_2"
+    code:"https://github.com/karthikvishal-s/portfolio_2",
+    time:2000
 
   }
   
 ];
 
 const Projects = () => {
+
+  const [loaded,setloaded] = useState(false);
+
+  useEffect(() => {
+    setloaded(true);},[])
+
+
+
+
   return (
     <div className="min-h-screen min-w-screen flex flex-col">
+      <div className={`transition-all duration-1000 ${loaded ? 'opacity-100 ' : 'opacity-0 '}`}>
       <Navbar sl={2} />
-      <p className='text-center font-raleway text-4xl mt-10 mb-10'>Projects</p>
+      </div>
+      <p className={`text-center font-raleway text-4xl mt-10 mb-10 transition-all duration-1000 ${loaded ? 'opacity-100' : 'opacity-0' }`}>Projects</p>
       <div className="flex-grow p-8 flex justify-center items-start">
         
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-16 w-full max-w-6xl">
+        <div className={`grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-16 w-full max-w-6xl ${loaded ? 'opacity-100' : 'opacity-0'} transition-opacity duration-2000`}>
           {ProjectData.map((project, index) => (
             <ProjectCard
               key={index}
