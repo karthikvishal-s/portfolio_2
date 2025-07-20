@@ -9,6 +9,7 @@ import qr from "../assets/qr.png";
 import trr from "../assets/trr2.png";
 import united from "../assets/united.png";
 import dh from "../assets/dh.png"; 
+import movrec from "../assets/mov_rec.png"; // Assuming you have a movie recommender image
 import port2 from "../assets/port2.png"; // Assuming you have a second portfolio image
 import { useEffect,useState} from 'react';
 
@@ -34,6 +35,14 @@ const ProjectData = [
     live:"https://varys.vercel.app/",
     code:"https://github.com/karthikvishal-s/The-Ravens-Roost",
     time:2000
+  },
+  {
+  title: "Movie Recommender",  pic: { src: movrec },
+  description: "A Movie recommendation system built using ML that suggests movies based on viewer preferences and ratings by using collaborative filtering",
+  stacks: ["Streamlit", "Python", "Pandas","scikit-learn", "fuzzywuzzy", "MovieLens-100k-dataset"],
+  live:"https://movie-recommendation-11.streamlit.app",
+  code:"https://github.com/karthikvishal-s/Recommendation_System",
+  time:2000
   },
   {
     title: "Pensieve",
