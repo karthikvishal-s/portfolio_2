@@ -96,16 +96,16 @@ const About = () => {
       <p className="text-sm">Mount Zion International School</p>
       <p className="text-sm text-gray-300">Board: CBSE</p>
       <p className="mt-2 text-sm font-medium">Score: <span className="text-green-400">94.2%</span></p>
-      <p className="text-xs text-gray-400 mt-1">Year: 2020</p>
+      <p className="text-xs text-gray-400 mt-1">Year: 2021</p>
     </div>
 
     {/* 12th Standard */}
     <div className="bg-white/10 p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300">
       <h3 className="text-xl font-semibold text-[#8F00F0] mb-2">12th Grade</h3>
-      <p className="text-sm">Mount Zion International School</p>
+      <p className="text-sm">Thamarai International School</p>
       <p className="text-sm text-gray-300">Stream: PCM with Computer Science</p>
       <p className="mt-2 text-sm font-medium">Score: <span className="text-green-400">88.8%</span></p>
-      <p className="text-xs text-gray-400 mt-1">Year: 2022</p>
+      <p className="text-xs text-gray-400 mt-1">Year: 2023</p>
     </div>
 
     {/* College */}
