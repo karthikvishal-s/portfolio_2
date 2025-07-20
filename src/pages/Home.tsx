@@ -49,7 +49,7 @@ const Home = () => {
           <img
             src={karthik}
             width={190}
-            className={`rounded-full object-cover relative -top-15 transition-all duration-4000 ${loaded? 'opacity-100 ' : 'opacity-0 '}`}
+            className={`rounded-full object-cover relative -top-15 transition-all duration-1500 ${loaded? 'opacity-100 ' : 'opacity-0 '}`}
             alt="Karthik Vishal"
           />
         </div>
