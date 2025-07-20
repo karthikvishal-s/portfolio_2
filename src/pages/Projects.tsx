@@ -96,7 +96,7 @@ const ProjectData = [
     pic: { src: portfolio1 },
     description: "Personal portfolio website, showcasing various animations and transformations. Enhanced with multiple React extensions for better interactivity.",
     stacks: ["ReactJS", "TailwindCSS", "Framer Motion", "React Router", "lucide-react"],
-    live:"https://karthikvishal-s.vercel.app/",
+    live:"https://karthikvishal2.vercel.app/",
     code:"https://github.com/karthikvishal-s/Portfolio",
     time:2000
 
@@ -107,7 +107,7 @@ const ProjectData = [
     pic: { src: port2 },
     description: "Personal portfolio website, showcasing various animations and transformations. Enhanced with multiple React extensions for better interactivity.",
     stacks: ["ReactJS", "TailwindCSS", "Framer Motion", "React Router", "lucide-react","MaterialUI"],
-    live:"https://karthikvishal1.vercel.app/",
+    live:"https://karthikvishal.vercel.app/",
     code:"https://github.com/karthikvishal-s/portfolio_2",
     time:2000
 

@@ -19,19 +19,10 @@ const About = () => {
 
         {/* Profile */}
         <div className="flex flex-col md:flex-row items-center gap-8 mb-12">
-          <motion.img
-            src={karthik}
-            alt="Karthik Vishal"
-            className="w-40 h-40 rounded-full object-cover border-4 border-gradient-to-r from-[#8F00F0] to-red-500"
-            initial={{ opacity: 0, scale: 0.8 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 1 }}
-          />
+          
           <p className="text-xs  text-justify leading-relaxed">
           <section className="max-w-4xl mx-auto px-6 py-12">
-      <h2 className="text-4xl font-bold text-center mb-8 text-white dark:text-white">
-        👋 Hi, I'm Karthik Vishal
-      </h2>
+
       <p className="text-xs  text-white dark:text-white leading-relaxed mb-6">
         What started as curiosity for how websites work soon turned into a full-blown passion for building them. I began with{" "}
         <strong>HTML, CSS, and JavaScript</strong>, and over time, leveled up into fullstack development using{" "}
