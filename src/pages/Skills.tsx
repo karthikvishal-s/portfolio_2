@@ -4,7 +4,7 @@ import Navbar from '../components/Navbar';
 const skills = [
   "py", "java", "cpp", "c", "html", "css", "js", "ts",
   "react", "nextjs", "nodejs", "express", "mongodb", "mysql",
-  "tailwind", "redux", "vite", "firebase", "vercel", "postman",
+  "tailwind", "redux", "vite", "firebase","gcp","postgres", "vercel", "postman",
   "haskell", "git", "github", "vscode", "figma", "electron",
   "notion", "linux", "bash", "powershell"
 ];

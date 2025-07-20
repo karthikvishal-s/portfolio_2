@@ -34,32 +34,17 @@ const About = () => {
         I'm on a journey to become a <strong>Fullstack + AI Engineer</strong> — combining frontend finesse, backend power, and the intelligence of{" "}
         <strong>AI & ML</strong>. From writing clean REST APIs to exploring <strong>PyTorch</strong> and building AI-enhanced features,
         I enjoy bridging real-world problems with smart solutions. I also actively practice{" "}
-        <strong>Data Structures & -xs orithms</strong> to strengthen my problem-solving foundation.
+        <strong>Data Structures & Algorithms</strong> to strengthen my problem-solving foundation.
       </p>
 
-      <h3 className="text-2xl font-semibold text-white dark:text-white mb-4">🚀 Projects I’ve Built</h3>
-      <ul className="list-disc list-inside text-white dark:text-gray-300 space-y-2 mb-6">
-        <li>
-          <strong>Caster+</strong> – A secure platform to track big spendings, gold price fluctuations, and insurance coverage.
-        </li>
-        <li>
-          <strong>Pensieve</strong> – A personal memory vault that helps users store, organize, and revisit valuable thoughts and moments.
-        </li>
-        <li>
-          <strong>TRR</strong> – A real estate showcase platform with a clean, professional UI for verified property listings.
-        </li>
-      </ul>
+      
 
       <p className="text-xs  text-white dark:text-gray-300 leading-relaxed mb-6">
-        ⚙️ <strong>Tech I Use:</strong> React, Next.js, Tailwind CSS, Firebase, MongoDB, Express, Node.js, TypeScript, PostgreSQL, Python, Git, Framer Motion
+        <strong>Currently Exploring:</strong> Advanced ML, chatbot development, AI + fullstack integration, and system design for scalable applications.
       </p>
 
       <p className="text-xs  text-white dark:text-gray-300 leading-relaxed mb-6">
-        📈 <strong>Currently Exploring:</strong> Advanced ML, chatbot development, AI + fullstack integration, and system design for scalable applications.
-      </p>
-
-      <p className="text-xs  text-white dark:text-gray-300 leading-relaxed mb-6">
-        🏏 When I’m not coding, I love playing <strong>badminton</strong> and perfecting my <strong>cover drives</strong> on the cricket field — because balance matters, both in life and in code.
+         When I’m not coding, I love playing <strong>badminton</strong> and swinging my <strong>bat</strong> on the cricket field
       </p>
 
       <p className="text-xl font-semibold text-white dark:text-white mt-10">
@@ -69,30 +54,62 @@ const About = () => {
           </p>
         </div>
 
-        {/* Education */}
-        <section className="mb-12 border p-4 rounded-xs  bg-white/10">
-          <h2 className="text-2xl font-semibold text-[#8F00F0] mb-3">🎓 Education</h2>
-          <ul className="list-disc list-inside space-y-2">
-            <li>B.Tech in Computer Science and Engineering – Amrita Vishwa Vidyapeetham (2022–2026)</li>
-            <li>CGPA: 8.45/10 (as of Semester 4)</li>
-          </ul>
-        </section>
+      {/* Education */}
+<section className="mb-12">
+  <h2 className="text-3xl font-semibold bg-gradient-to-r from-[#8F00F0] to-pink-500 text-transparent bg-clip-text mb-8 text-center">
+ Education
+  </h2>
 
-        {/* Experience */}
-        <section className="mb-12 border p-4 rounded-xs  bg-white/10">
-          <h2 className="text-2xl font-semibold text-red-400 mb-3">💼 Experience</h2>
-          <div className="space-y-4">
-            <div>
-              <strong>Web Development Intern – LaunchED Global</strong>
-              <p className="text-sm">Apr 2025 – Present · Remote</p>
-              <p>Working on a Cab Booking Portal with real-time vendor collaboration, PostgreSQL backend, and Node/NextJS architecture.</p>
-            </div>
-            <div>
-              <strong>Hackathons – Amazon HackOn, Mega Hackathon 2025</strong>
-              <p>Built end-to-end apps with real-world use cases under tight deadlines. Focused on Goal 4 (Education) in UnitED.</p>
-            </div>
-          </div>
-        </section>
+  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 text-white">
+    
+    {/* 10th Standard */}
+    <div className="bg-white/10 p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300">
+      <h3 className="text-xl font-semibold text-[#8F00F0] mb-2">10th Grade</h3>
+      <p className="text-sm">Mount Zion International School</p>
+      <p className="text-sm text-gray-300">Board: CBSE</p>
+      <p className="mt-2 text-sm font-medium">Score: <span className="text-green-400">94.2%</span></p>
+      <p className="text-xs text-gray-400 mt-1">Year: 2020</p>
+    </div>
+
+    {/* 12th Standard */}
+    <div className="bg-white/10 p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300">
+      <h3 className="text-xl font-semibold text-[#8F00F0] mb-2">12th Grade</h3>
+      <p className="text-sm">Mount Zion International School</p>
+      <p className="text-sm text-gray-300">Stream: PCM with Computer Science</p>
+      <p className="mt-2 text-sm font-medium">Score: <span className="text-green-400">88.8%</span></p>
+      <p className="text-xs text-gray-400 mt-1">Year: 2022</p>
+    </div>
+
+    {/* College */}
+    <div className="bg-white/10 p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300">
+      <h3 className="text-xl font-semibold text-[#8F00F0] mb-2">B.Tech – CSE</h3>
+      <p className="text-sm">Amrita Vishwa Vidyapeetham</p>
+      <p className="text-sm text-gray-300">Batch: 2023–2027</p>
+      <p className="mt-2 text-sm font-medium">CGPA: <span className="text-green-400">8.45 / 10</span></p>
+      <p className="text-xs text-gray-400 mt-1">Current: End of Semester 4</p>
+    </div>
+
+  </div>
+</section>
+
+
+{/* Achievements */}
+<section className="mb-12  p-6 rounded-md  shadow-md text-center">
+  <h2 className="text-3xl font-semibold bg-gradient-to-r from-red-500 to-yellow-400 text-transparent bg-clip-text mb-6">
+Achievements
+  </h2>
+  <ul className="list-disc list-inside space-y-3 text-white text-sm leading-relaxed">
+    
+    {/* New Academic Achievements */}
+    <li><strong>JEE Mains:</strong> Scored <span className="text-green-400">96.99 percentile</span> (2022)</li>
+    <li><strong>JEE Advanced:</strong> Qualified with <span className="text-green-400">AIR 23,609</span></li>
+    <li><strong>AEEE (Amrita Entrance Exam):</strong> Scored <span className="text-green-400">Rank 509</span></li>
+    <li><strong>Spell Bee International:</strong> Achieved <span className="text-green-400">International-Level Certification</span></li>
+    <li><strong>Business-Cultural Quiz Winner:</strong> Winner at <span className="text-yellow-400">Dhruva, IIM Trichy</span> </li>
+  </ul>
+</section>
+
+
 
 
 
@@ -100,12 +117,49 @@ const About = () => {
 
 
         {/* Connect */}
-        <section>
-          <h2 className="text-2xl font-semibold text-red-400 mb-3">📡 Connect With Me</h2>
-          <p>
-            Feel free to reach out on <a href="https://github.com/karthikvishal-s" className="text-[#8F00F0] underline">GitHub</a>, <a href="https://linkedin.com/in/karthik-vishal-s-851921287" className="text-[#8F00F0] underline">LinkedIn</a> or mail me at <a href="mailto:karthikvishal1506@gmail.com" className="text-[#8F00F0] underline">karthikvishal1506@gmail.com</a>.
-          </p>
-        </section>
+<section className="mt-16  p-6 sm:p-10 shadow-md backdrop-blur-md">
+  <h2 className="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-red-400 to-[#8F00F0] mb-6 text-center">
+     Connect With Me
+  </h2>
+
+  <p className="text-sm sm:text-base text-center text-gray-300 mb-6 max-w-2xl mx-auto leading-relaxed">
+    Always excited to collaborate on impactful projects, talk tech, or just connect. Feel free to reach out on any of the platforms below:
+  </p>
+
+  <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
+    {/* GitHub */}
+    <a
+      href="https://github.com/karthikvishal-s"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="flex items-center gap-2 px-5 py-2 rounded-full bg-white/10 hover:bg-[#8F00F0]/80 transition text-white border border-white/10"
+    >
+     
+      <span>GitHub</span>
+    </a>
+
+    {/* LinkedIn */}
+    <a
+      href="https://linkedin.com/in/karthik-vishal-s-851921287"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="flex items-center gap-2 px-5 py-2 rounded-full bg-white/10 hover:bg-blue-600/80 transition text-white border border-white/10"
+    >
+      
+      <span>LinkedIn</span>
+    </a>
+
+    {/* Email */}
+    <a
+      href="mailto:karthikvishal1506@gmail.com"
+      className="flex items-center gap-2 px-5 py-2 rounded-full bg-white/10 hover:bg-rose-500/80 transition text-white border border-white/10"
+    >
+      
+      <span>Email</span>
+    </a>
+  </div>
+</section>
+
 
       </div>
     </div>
