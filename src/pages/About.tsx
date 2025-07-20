@@ -1,6 +1,5 @@
 import Navbar from '../components/Navbar'
-import karthik from "../assets/kv.jpg";
-import { motion } from "framer-motion";
+
 
 const About = () => {
   return (
