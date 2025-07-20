@@ -43,7 +43,7 @@ const Home = () => {
       </div>
 
       {/* Main Content */}
-      <div className="flex-grow flex flex-col justify-center items-center relative z-10 px-4 mt-60">
+      <div className="flex-grow flex flex-col justify-center items-center relative z-10 px-4 mt-40 md:mt-60">
         {/* Profile Image */}
         <div >
           <img
