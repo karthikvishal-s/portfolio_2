@@ -38,7 +38,7 @@ const Home = () => {
       />
 
       {/* Navbar */}
-      <div className={`transition-all duration-2000 ${loaded ? 'opacity-100 ' : 'opacity-0 '}`}>
+      <div className={`transition-all duration-3000 ${loaded ? 'opacity-100 ' : 'opacity-0 '}`}>
       <Navbar sl={0} />
       </div>
 
@@ -49,17 +49,17 @@ const Home = () => {
           <img
             src={karthik}
             width={190}
-            className={`rounded-full object-cover relative -top-15 transition-all duration-2000 ${loaded? 'opacity-100 ' : 'opacity-0 '}`}
+            className={`rounded-full object-cover relative -top-15 transition-all duration-4000 ${loaded? 'opacity-100 ' : 'opacity-0 '}`}
             alt="Karthik Vishal"
           />
         </div>
 
         {/* Title & Tagline */}
         <div className="text-center">
-          <h1 className={`text-4xl font-raleway bg-gradient-to-r from-[#8F00F0] to-red-500 bg-clip-text text-transparent transition-all duration-2000  ${loaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-[70%]'}`}>
+          <h1 className={`text-4xl font-raleway bg-gradient-to-r from-[#8F00F0] to-red-500 bg-clip-text text-transparent transition-all duration-3000  ${loaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-[70%]'}`}>
             Karthik Vishal Subramaniyan
           </h1>
-          <p className={`text-white mt-6 font-raleway text-sm transition-all duration-2000 ${loaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-[70%]'} `}>
+          <p className={`text-white mt-6 font-raleway text-sm transition-all duration-4000 ${loaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-[70%]'} `}>
             Forging new ideas, contributing to the society
           </p>
 
@@ -71,7 +71,7 @@ const Home = () => {
               target="_blank"
               rel="noopener noreferrer"
               whileHover={{ scale: 1.5, rotate: 10 }}
-              className={`text-white hover:text-[#8F00F0] transition-all duration-2000 ${loaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-[70%]'}`}
+              className={`text-white hover:text-[#8F00F0] transition-all duration-3000 ${loaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-[70%]'}`}
             >
               <FaGithub className="text-3xl" />
             </motion.a>
@@ -82,7 +82,7 @@ const Home = () => {
               target="_blank"
               rel="noopener noreferrer"
               whileHover={{ scale: 1.5, rotate: 10 }}
-              className={`text-white hover:text-[#8F00F0] transition-all duration-2000 ${loaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-[70%]'}`}
+              className={`text-white hover:text-[#8F00F0] transition-all duration-3000 ${loaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-[70%]'}`}
             >
               <FaLinkedin className="text-3xl" />
             </motion.a>
@@ -91,7 +91,7 @@ const Home = () => {
             <motion.a
               href="mailto:karthikvishal1506@gmail.com"
               whileHover={{ scale: 1.5, rotate: -10 }}
-              className={`text-white hover:text-[#8F00F0] transition-all duration-2000 ${loaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-[70%]'}`}
+              className={`text-white hover:text-[#8F00F0] transition-all duration-3000 ${loaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-[70%]'}`}
             >
               <FaEnvelope className="text-3xl" />
             </motion.a>
@@ -100,7 +100,7 @@ const Home = () => {
             <motion.a
               href="https://medium.com/@karthikvishal1506"
               whileHover={{ scale: 1.5, rotate: -10 }}
-              className={`text-white hover:text-[#8F00F0] transition-all duration-2000 ${loaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-[70%]'}`}
+              className={`text-white hover:text-[#8F00F0] transition-all duration-3000 ${loaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-[70%]'}`}
             >
               <FaMediumM className="text-3xl" />
             </motion.a>
@@ -109,7 +109,7 @@ const Home = () => {
             <motion.a
               href="https://x.com/KarthikVis66697"
               whileHover={{ scale: 1.5, rotate: -10 }}
-              className={`text-white hover:text-[#8F00F0] transition-all duration-2000 ${loaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-[70%]'}`}
+              className={`text-white hover:text-[#8F00F0] transition-all duration-3000 ${loaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-[70%]'}`}
             >
               <FaXTwitter className="text-3xl" />
             </motion.a>
