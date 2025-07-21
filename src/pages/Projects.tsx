@@ -77,7 +77,7 @@ const ProjectData = [
     pic: { src: portfolio1 },
     description:"An Interactive website designed specially for Autistic kids to recognize and lern visual patter with the assistance of audio direction.",
     stacks: ["ReactJS", "CSS","Html","Javascript"],
-    live:"https://karthikvishal2.vercel.app/",
+    live:"https://shapesense.vercel.app/",
     code:"https://github.com/karthikvishal-s/ShapeSense",
     time:2000
 
