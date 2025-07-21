@@ -81,9 +81,9 @@ const Skills = () => {
                   href={cert.link}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className={`rounded-xl p-6 text-white shadow-xl hover:shadow-2xl transform transition duration-500 hover:scale-105 bg-black border`}
+                  className={`rounded-xl p-6 text-white shadow-xl hover:shadow-2xl transform transition duration-500 hover:scale-110 bg-black border border-gray-500`}
                 >
-                  <div className="text-lg font-semibold mb-2 text-purple-500 text-center">
+                  <div className="text-lg font-semibold mb-2 text-purple-500 text-center hover:text-white">
                     {cert.title}
                   </div>
                   <div className="text-sm italic opacity-90 mt-10">

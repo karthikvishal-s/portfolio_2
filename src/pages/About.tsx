@@ -41,7 +41,7 @@ const About = () => {
 >
 <section className="max-w-4xl mx-auto px-6 py-12">
 
-<p className="text-xs  text-white dark:text-white leading-relaxed mb-6">
+<p className="text-sm  text-white dark:text-white leading-relaxed mb-6">
   What started as curiosity for how websites work soon turned into a full-blown passion for building them. I began with{" "}
   <strong className='text-green-500'>HTML, CSS, and JavaScript</strong>, and over time, leveled up into fullstack development using{" "}
   <strong className='text-green-500'>React</strong>, <strong className='text-green-500'>Next.js</strong>, <strong className='text-green-500'>Tailwind</strong>, <strong>Node.js</strong>,{" "}
@@ -49,7 +49,7 @@ const About = () => {
   <strong className='text-green-500'>TypeScript</strong> and <strong className='text-green-500'>Shadcn UI</strong> to build scalable, accessible, and clean UIs.
 </p>
 
-<p className="text-xs  text-white dark:text-gray-300 leading-relaxed mb-6">
+<p className="text-sm  text-white dark:text-gray-300 leading-relaxed mb-6">
   I'm on a journey to become a <strong className='text-green-500'>Fullstack + AI Engineer</strong> — combining frontend finesse, backend power, and the intelligence of{" "}
   <strong className='text-green-500'>AI & ML</strong>. From writing clean REST APIs to exploring <strong className='text-green-500'>PyTorch</strong> and building AI-enhanced features,
   I enjoy bridging real-world problems with smart solutions. I also actively practice{" "}
@@ -58,11 +58,11 @@ const About = () => {
 
 
 
-<p className="text-xs  text-white dark:text-gray-300 leading-relaxed mb-6">
+<p className="text-sm  text-white dark:text-gray-300 leading-relaxed mb-6">
   <strong className='text-green-500'>Currently Exploring:</strong> Advanced ML, chatbot development, AI + fullstack integration, and system design for scalable applications.
 </p>
 
-<p className="text-xs  text-white dark:text-gray-300 leading-relaxed mb-6">
+<p className="text-sm  text-white dark:text-gray-300 leading-relaxed mb-6">
    When I’m not coding, I love playing <strong>badminton</strong> and swinging my <strong>bat</strong> on the cricket field
 </p>
 
@@ -91,8 +91,8 @@ const About = () => {
   <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 text-white">
     
     {/* 10th Standard */}
-    <div className="bg-white/10 p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300">
-      <h3 className="text-xl font-semibold text-[#8F00F0] mb-2">10th Grade</h3>
+    <div className="border border-gray-500 p-6 rounded-lg shadow-md hover:scale-110 hover:shadow-lg transition duration-300">
+      <h3 className="text-xl font-semibold text-[#8F00F0] mb-2 text-center">10th Grade</h3>
       <p className="text-sm">Mount Zion International School</p>
       <p className="text-sm text-gray-300">Board: CBSE</p>
       <p className="mt-2 text-sm font-medium">Score: <span className="text-green-400">94.2%</span></p>
@@ -100,8 +100,8 @@ const About = () => {
     </div>
 
     {/* 12th Standard */}
-    <div className="bg-white/10 p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300">
-      <h3 className="text-xl font-semibold text-[#8F00F0] mb-2">12th Grade</h3>
+    <div className="border border-gray-500 p-6 rounded-lg shadow-md hover:scale-110 transition duration-300">
+      <h3 className="text-xl font-semibold text-[#8F00F0] mb-2 text-center">12th Grade</h3>
       <p className="text-sm">Thamarai International School</p>
       <p className="text-sm text-gray-300">Stream: PCM with Computer Science</p>
       <p className="mt-2 text-sm font-medium">Score: <span className="text-green-400">88.8%</span></p>
@@ -109,8 +109,8 @@ const About = () => {
     </div>
 
     {/* College */}
-    <div className="bg-white/10 p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300">
-      <h3 className="text-xl font-semibold text-[#8F00F0] mb-2">B.Tech – CSE</h3>
+    <div className="border border-gray-500 p-6 rounded-lg shadow-md hover:scale-110 hover:shadow-lg transition duration-300">
+      <h3 className="text-xl font-semibold text-[#8F00F0] mb-2 text-center">B.Tech – CSE</h3>
       <p className="text-sm">Amrita Vishwa Vidyapeetham</p>
       <p className="text-sm text-gray-300">Batch: 2023–2027</p>
       <p className="mt-2 text-sm font-medium">CGPA: <span className="text-green-400">8.45 / 10</span></p>
