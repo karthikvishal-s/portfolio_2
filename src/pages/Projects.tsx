@@ -8,7 +8,9 @@ import sportshub from "../assets/sportshub.png";
 import qr from "../assets/qr.png";
 import trr from "../assets/trr2.png";
 import united from "../assets/united.png";
+import ssh from "../assets/ssh.png"; // Assuming you have an SSH-related image
 import dh from "../assets/dh.png"; 
+import shapes from "../assets/shapes.png"; // Assuming you have a shapesense image
 import movrec from "../assets/mov_rec.png"; // Assuming you have a movie recommender image
 import port2 from "../assets/port2.png"; // Assuming you have a second portfolio image
 import { useEffect,useState} from 'react';
@@ -54,6 +56,15 @@ const ProjectData = [
     time:2000
   },
   {
+    title: "HTTP-SSH – in Progress",
+    pic: { src: ssh },
+    description: "This project aims to develop a remote shell system that allows users to execute operating system commands on a remote server machine using standard web technologies. Unlike traditional SSH, all communication for commands and their outputs will be facilitated over the HTTP protocol.",
+    stacks: ["Go", "Rust", "Python","SHH","Telnet", "NextJS", "MongoDB","TailwindCSS","NodeJS"],
+    live:"",
+    code:"https://github.com/karthikvishal-s/http-ssh.rfc",
+    time:2000
+  },
+  {
     title: "DocHelp - in Progress",
     pic: { src: dh },
     description: "(Still in Progress)   Designed to help doctors efficiently manage patient data in an orthopedic clinic.",
@@ -74,7 +85,7 @@ const ProjectData = [
   },
   {
     title: "ShapeSense",
-    pic: { src: portfolio1 },
+    pic: { src: shapes },
     description:"An Interactive website designed specially for Autistic kids to recognize and lern visual patter with the assistance of audio direction.",
     stacks: ["ReactJS", "CSS","Html","Javascript"],
     live:"https://shapesense.vercel.app/",
