@@ -52,7 +52,7 @@ const Skills = () => {
         <div className="w-full max-w-6xl p-6 flex flex-col gap-6">
 
           {/* Tech Stacks Heading */}
-          <h1 className="text-center text-4xl font-extrabold mb-6 text-white">
+          <h1 className="text-center text-4xl mb-6 bg-gradient-to-r from-[#8F00F0] to-red-500 text-transparent bg-clip-text transform transition duration-500  hover:scale-110">
            Tech Stacks
           </h1>
 
@@ -70,7 +70,7 @@ const Skills = () => {
 
           {/* Certifications Section */}
           <div>
-            <h2 className="text-3xl font-bold text-center mt-20 mb-10 text-white">
+            <h2 className="text-3xl font-bold text-center mt-20 mb-10 bg-gradient-to-r from-[#8F00F0] to-red-500 text-transparent bg-clip-text transform transition duration-500  hover:scale-110 ">
                Certifications
             </h2>
 

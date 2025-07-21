@@ -73,6 +73,16 @@ const ProjectData = [
     time:2000
   },
   {
+    title: "ShapeSense",
+    pic: { src: portfolio1 },
+    description:"An Interactive website designed specially for Autistic kids to recognize and lern visual patter with the assistance of audio direction.",
+    stacks: ["ReactJS", "CSS","Html","Javascript"],
+    live:"https://karthikvishal2.vercel.app/",
+    code:"https://github.com/karthikvishal-s/ShapeSense",
+    time:2000
+
+  },
+  {
     title: "QR Generator",
     pic: { src: qr },
     description: "Built using Node and Express, this QR code generator allows users to create custom QR codes for various purposes.",
@@ -130,7 +140,7 @@ const Projects = () => {
       <div className={`transition-all duration-1000 ${loaded ? 'opacity-100 ' : 'opacity-0 '}`}>
       <Navbar sl={2} />
       </div>
-      <p className={`text-center font-raleway text-4xl mt-10 mb-10 transition-all duration-1000 ${loaded ? 'opacity-100' : 'opacity-0' }`}>Projects</p>
+      <p className={`text-center font-raleway text-4xl mt-10 mb-10 transition-all duration-1000 bg-gradient-to-r from-[#8F00F0] to-red-500 text-transparent bg-clip-text transform transition duration-500  hover:scale-110 ${loaded ? 'opacity-100' : 'opacity-0' }`}>Projects</p>
       <div className="flex-grow p-8 flex justify-center items-start">
         
         <div className={`grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-16 w-full max-w-6xl ${loaded ? 'opacity-100' : 'opacity-0'} transition-opacity duration-2000`}>
