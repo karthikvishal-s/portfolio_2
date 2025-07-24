@@ -99,7 +99,7 @@ const Skills = () => {
   const iconClass = 'w-16 h-16 sm:w-20 sm:h-20 transition-transform duration-300 group-hover:scale-125';
 
   const SkillSection: React.FC<SkillSectionProps> = ({ title, icons }) => (
-    <motion.div className="mb-10 p-6 rounded-xl transition border border-gray-700 translate-all duration-500 bg-[#824eba] hover:bg-[#8c59c2] hover:scale-110 shadow-2xl backdrop-blur-sm"
+    <motion.div className="mb-10 p-6 rounded-xl transition border border-gray-700 translate-all duration-1000 bg-black hover:bg-[#8c59c2] hover:scale-110 shadow-2xl backdrop-blur-sm"
       variants={itemVariants}
       initial="hidden"
       animate="show"
