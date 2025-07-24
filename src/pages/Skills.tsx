@@ -167,14 +167,13 @@ const Skills = () => {
 
           {/* Certifications Section */}
           <div className="mt-20">
-            <motion.h2
-              className="text-center text-4xl font-bold mb-10 bg-gradient-to-r from-blue-400 to-emerald-400 text-transparent bg-clip-text drop-shadow-lg"
-              initial={{ y: -50, opacity: 0 }}
-              animate={{ y: 0, opacity: 1 }}
-              transition={{ duration: 0.8, ease: "easeOut", delay: 0.3 }}
-            >
-              Professional Certifications
-            </motion.h2>
+          <motion.h1
+            className="text-center font-raleway text-4xl mb-20  transition-all duration-1000 bg-gradient-to-r from-[#8F00F0] to-red-500 text-transparent bg-clip-text transform transition duration-500  hover:scale-110"
+            transition={{ duration: 0.8, ease: "easeOut" }}
+          >
+            Professional Certificates
+          </motion.h1>
+           
 
             <motion.div
               className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 px-4"
@@ -189,13 +188,13 @@ const Skills = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                     className={`block rounded-xl p-8 shadow-2xl transform transition-all duration-500 ease-in-out cursor-pointer
-                      bg-gradient-to-br from-gray-600 to-gray-900 border border-gray-700 hover:border-purple-500
+                      bg-gradient-to-br from-orange-700 to-black border border-gray-700 hover:border-purple-500
                       hover:shadow-purple-500/30 group relative overflow-hidden h-60 w-80`}
                     variants={itemVariants}
                   >
                     <div className="absolute inset-0 border-2 border-transparent rounded-xl transition-all duration-300 group-hover:border-purple-500 pointer-events-none"></div>
 
-                    <h3 className="text-xl font-semibold mb-3 text-purple-500 group-hover:text-white transition-colors duration-300">
+                    <h3 className="text-xl font-semibold mb-3 text-purple-400 group-hover:text-white transition-colors duration-300">
                       {cert.title}
                     </h3>
                    
@@ -210,9 +209,7 @@ const Skills = () => {
         </div>
       </motion.div>
       {/* Footer (Optional) */}
-      <div className="text-center mt-20 pb-10 text-gray-500 text-sm">
-        <p>Crafted with passion and precision.</p>
-      </div>
+
 
       {/* Reminder: Place blob animation styles in your global CSS file */}
     </div>
