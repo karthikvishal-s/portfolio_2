@@ -151,7 +151,7 @@ const Skills = () => {
 
           {/* Heading */}
           <motion.h1
-            className="text-center font-raleway text-4xl   transition-all duration-1000 bg-gradient-to-r from-[#8F00F0] to-red-500 text-transparent bg-clip-text transform transition duration-500  hover:scale-110"
+            className="text-center font-raleway text-4xl relative -top-10  transition-all duration-1000 bg-gradient-to-r from-[#8F00F0] to-red-500 text-transparent bg-clip-text transform transition duration-500  hover:scale-110"
             transition={{ duration: 0.8, ease: "easeOut" }}
           >
             Tech Stack
