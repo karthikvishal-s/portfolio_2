@@ -69,7 +69,7 @@ const ProjectData = [
     pic: { src: dh },
     description: "(Still in Progress)   Designed to help doctors efficiently manage patient data in an orthopedic clinic.",
     stacks: ["VueJs", "TailwindCSS", "NodeJS", "ExpressJS", "PostgreSQL"],
-    live:"https://buynoire.vercel.app/",
+    live:"/",
     code:"https://github.com/karthikvishal-s/DocHelp",
     time:2000
 
@@ -79,7 +79,7 @@ const ProjectData = [
     pic: { src: united },
     description: "Created for the Mega Hackathon 2025 under the theme of SDE Goals, this app focuses on Goal 4 (Education), providing a safe space for students dealing with anxiety and introversion.",
     stacks:["ReactJS", "TailwindCSS","Firebase", "FireStore DB"],
-    live:"https://buynoire.vercel.app/",
+    live:"/",
     code:"https://github.com/karthikvishal-s/UnitEd",
     time:2000
   },
@@ -98,7 +98,7 @@ const ProjectData = [
     pic: { src: qr },
     description: "Built using Node and Express, this QR code generator allows users to create custom QR codes for various purposes.",
     stacks: ["NodeJS", "ExpressJS", "TailwindCSS", "MongoDB"],
-    live:"https://buynoire.vercel.app/",
+    live:"/",
     code:"https://github.com/karthikvishal-s/QR-generator",
     time:2000
   },
@@ -108,7 +108,7 @@ const ProjectData = [
     pic: { src: sportshub },
     description:"A FrontEnd Application for Sports Enthusiasts, providing a platform to explore and engage with various sports-related content.",
     stacks: ["HTML", "CSS", "Javascript"],
-    live:"https://buynoire.vercel.app/",
+    live:"/",
     code:"https://github.com/karthikvishal-s/SportsHub",
     time:2000
   },
