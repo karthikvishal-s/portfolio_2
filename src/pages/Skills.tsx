@@ -136,7 +136,7 @@ const Skills = () => {
       <div className="absolute top-0 right-0 w-80 h-80 bg-red-600 rounded-full mix-blend-multiply filter blur-xl opacity-30 animate-blob animation-delay-2000"></div>
       <div className="absolute bottom-0 left-1/4 w-80 h-80 bg-blue-600 rounded-full mix-blend-multiply filter blur-xl opacity-30 animate-blob animation-delay-4000"></div>
 
-      <Navbar sl={3} />
+      
 
       <motion.div
         className={`flex-grow flex justify-center items-center p-4 relative z-10 transition-opacity duration-1000 ${isVisible ? 'opacity-100' : 'opacity-0'}`}
@@ -145,6 +145,9 @@ const Skills = () => {
         variants={containerVariants}
       >
         <div className="w-full max-w-7xl p-6 flex flex-col gap-12">
+        <div className='relative -top-10'>
+        <Navbar sl={3} />
+        </div>
 
           {/* Heading */}
           <motion.h1
