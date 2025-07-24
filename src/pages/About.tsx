@@ -66,9 +66,7 @@ const About = () => {
    When I’m not coding, I love playing <strong>badminton</strong> and swinging my <strong>bat</strong> on the cricket field
 </p>
 
-<p className="text-xl font-semibold text-white dark:text-white mt-10 text-center">
-  “Learning fast. Building smart. Growing consistently.”
-</p>
+
 </section>
 
 </motion.div>
@@ -122,28 +120,7 @@ const About = () => {
 </motion.div>
 
 
-{/* Achievements */}
-<motion.div
-  className="flex flex-col  items-center gap-8 "
-  initial={{ opacity: 0, y: 0 }}
-  whileInView={{ opacity: 1, y: 0 }}
-  viewport={{ once: true }}
-  transition={{ duration: 1.6, ease: "easeOut" }}>
-<section className="  p-6 shadow-md text-center">
-  <h2 className="text-3xl font-semibold bg-gradient-to-r from-red-500 to-yellow-400 text-transparent bg-clip-text mb-6 text-center">
-Achievements
-  </h2>
-  <ul className="list-disc list-inside space-y-3 text-white text-sm leading-relaxed">
-    
-    {/* New Academic Achievements */}
-    <li><strong>JEE Mains:</strong> Scored <span className="text-green-400">96.99 percentile</span> (2022)</li>
-    <li><strong>JEE Advanced:</strong> Qualified with <span className="text-green-400">AIR 23,609</span></li>
-    <li><strong>AEEE (Amrita Entrance Exam):</strong> Scored <span className="text-green-400">Rank 509</span></li>
-    <li><strong>Spell Bee International:</strong> Achieved <span className="text-green-400">International-Level Certification</span></li>
-    <li><strong>Business-Cultural Quiz Winner:</strong> Winner at <span className="text-yellow-400">Dhruva, IIM Trichy</span> </li>
-  </ul>
-</section>
-</motion.div>
+
 
 
 
@@ -153,6 +130,51 @@ Achievements
 
 
         {/* Connect */}
+        {/* Competitive Examinations */}
+<motion.div
+  className="flex flex-col md:flex-row items-center gap-8 mb-12"
+  initial={{ opacity: 0, y: 0 }}
+  whileInView={{ opacity: 1, y: 0 }}
+  viewport={{ once: true }}
+  transition={{ duration: 1.6, ease: "easeOut" }}>
+<section className="mb-12">
+  <h2 className="text-center text-3xl font-semibold bg-gradient-to-r from-[#8F00F0] to-pink-500 text-transparent bg-clip-text mb-8 text-center underline-animation">
+ Competitive Examinations
+  </h2>
+
+  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 text-white text-center">
+    
+    {/* JEE Mains */}
+    <div className="border border-gray-500 p-6 rounded-lg shadow-md hover:scale-110 hover:shadow-lg transition duration-300">
+      <h3 className="text-xl font-semibold text-[#8F00F0] mb-2 text-center">JEE Mains</h3>
+      <p className="text-sm">National Testing Agency</p>
+      
+      <p className="text-sm text-gray-300">Paper: B.E/B.Tech</p>
+      <p className="mt-2 text-sm font-medium">Percentile: <span className="text-green-400">96.99%</span></p>
+      <p className="text-xs text-gray-400 mt-1">Year: 2023</p>
+    </div>
+
+    {/* JEE Advanced */}
+    <div className="border border-gray-500 p-6 rounded-lg shadow-md hover:scale-110 transition duration-300">
+      <h3 className="text-xl font-semibold text-[#8F00F0] mb-2 text-center">JEE Advanced</h3>
+      <p className="text-sm">IIT Guwahati</p>
+     
+      <p className="mt-2 text-sm font-medium">Rank: <span className="text-green-400">23041</span></p>
+      <p className="text-xs text-gray-400 mt-1">Year: 2023</p>
+    </div>
+
+    {/* VITEEE */}
+    <div className="border border-gray-500 p-6 rounded-lg shadow-md hover:scale-110 hover:shadow-lg transition duration-300">
+      <h3 className="text-xl font-semibold text-[#8F00F0] mb-2 text-center">AEEE</h3>
+      <p className="text-sm">Amrita Vishwa Vidypeetham</p>
+
+      <p className="mt-2 text-sm font-medium">Rank: <span className="text-green-400">513</span></p>
+      <p className="text-xs text-gray-400 mt-1">Year: 2023</p>
+    </div>
+
+  </div>
+</section>
+</motion.div>
        
 
 
