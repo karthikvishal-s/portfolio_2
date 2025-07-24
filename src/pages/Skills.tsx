@@ -160,9 +160,9 @@ const Skills = () => {
           <motion.div className="space-y-12" variants={containerVariants}>
             <SkillSection title="Languages" icons={["python", "java", "c++", "typescript", "bash", "haskell"]} />
             <SkillSection title="Frontend" icons={["html5", "css3", "js", "react", "nextjs", "vuejs", "tailwindcss", "materialui", "framer", "shadcnui"]} />
-            <SkillSection title="Backend & Databases" icons={["nodejs", "django", "pytorch", "mongodb", "mongoose", "mysql", "postgresql"]} />
-            <SkillSection title="DevOps & Cloud" icons={["gcloud", "docker", "kubernetes", "vercel", "netlify", "ubuntu"]} />
-            <SkillSection title="Tools & Essentials" icons={["git", "github", "vscode", "postman", "figma", "notion", "electron", "markdown", "homebrew"]} />
+            <SkillSection title="Backend & Databases" icons={["nodejs", "django","expressjs", "pytorch", "mongodb", "mongoose", "mysql", "postgresql"]} />
+            <SkillSection title="DevOps & Cloud" icons={["gcloud","streamlit", "docker", "kubernetes", "vercel", "netlify", "ubuntu"]} />
+            <SkillSection title="Tools & Essentials" icons={["git", "github", "vscode", "postman", "figma", "notion", "electron", "markdown", "homebrew","cypress","jest"]} />
           </motion.div>
 
           {/* Certifications Section */}
@@ -190,7 +190,7 @@ const Skills = () => {
                     rel="noopener noreferrer"
                     className={`block rounded-xl p-8 shadow-2xl transform transition-all duration-500 ease-in-out cursor-pointer
                       bg-gradient-to-br from-gray-600 to-gray-900 border border-gray-700 hover:border-purple-500
-                      hover:shadow-purple-500/30 group relative overflow-hidden`}
+                      hover:shadow-purple-500/30 group relative overflow-hidden h-60 w-80`}
                     variants={itemVariants}
                   >
                     <div className="absolute inset-0 border-2 border-transparent rounded-xl transition-all duration-300 group-hover:border-purple-500 pointer-events-none"></div>
@@ -198,10 +198,8 @@ const Skills = () => {
                     <h3 className="text-xl font-semibold mb-3 text-purple-500 group-hover:text-white transition-colors duration-300">
                       {cert.title}
                     </h3>
-                    <p className="text-base text-gray-300 leading-relaxed">
-                      This certification validated my expertise in {cert.title.includes("Backend") ? "server-side development" : cert.title.includes("AI") ? "artificial intelligence concepts" : "web development fundamentals"}.
-                    </p>
-                    <div className="text-sm italic opacity-80 mt-6 text-gray-400">
+                   
+                    <div className="text-sm italic opacity-80 mt-16 text-gray-400">
                       Offered by <span className="font-medium text-purple-200">{cert.platform}</span>
                     </div>
                   </motion.a>
