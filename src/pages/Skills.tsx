@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import Navbar from '../components/Navbar';
 import StackIcon from 'tech-stack-icons';
-import { motion } from 'framer-motion';
+import { motion, type Variants } from 'framer-motion'; // Import 'Variants' type
 import { Tilt } from 'react-tilt';
 
 // Important: Ensure you have these packages installed:
@@ -15,7 +15,7 @@ type Certification = {
   title: string;
   link: string;
   platform: string;
-  color: string; // Still here, but not directly used for background anymore in this version
+  color: string;
 };
 
 const certifications: Certification[] = [
@@ -47,9 +47,9 @@ const certifications: Certification[] = [
 
 // Map StackIcon names to display names, especially for problematic ones or for better readability
 const iconDisplayNames: { [key: string]: string } = {
-  "c++": "C++", // Fix for StackIcon's internal name vs. display
-  "js": "JavaScript",
-  "gcloud": "Google Cloud",
+  "cplusplus": "C++", // Corrected from "c++"
+  "js": "JavaScript", // Corrected from "js"
+  "gcloud": "Google Cloud", // Corrected from "gcloud"
   "nextjs2": "Next.js", // If you meant nextjs, this is a common typo. Using 'nextjs' is better.
   "copilotgithub": "GitHub Copilot", // Assuming this is the intended display
   // Add other mappings if you find more icons aren't displaying nicely
@@ -65,52 +65,60 @@ const Skills = () => {
   const [isVisible, setIsVisible] = useState<boolean>(false);
 
   useEffect(() => {
-    // Small delay to ensure fade-in transition works on mount
     const timeout = setTimeout(() => setIsVisible(true), 100);
     return () => clearTimeout(timeout);
   }, []);
 
   // Framer Motion variants for staggered animations
-  const containerVariants = {
+  const containerVariants: Variants = { // Explicitly type as Variants
     hidden: { opacity: 0, y: 20 },
     show: {
       opacity: 1,
       y: 0,
       transition: {
-        staggerChildren: 0.08, // Slightly faster stagger
-        delayChildren: 0.1
-      }
-    }
+        staggerChildren: 0.08,
+        delayChildren: 0.1,
+      },
+    },
   };
 
-  const itemVariants = {
+  const itemVariants: Variants = { // Explicitly type as Variants
     hidden: { opacity: 0, y: 20, scale: 0.9 },
-    show: { opacity: 1, y: 0, scale: 1, transition: { duration: 0.4, ease: "easeOut" } }
+    show: {
+      opacity: 1,
+      y: 0,
+      scale: 1,
+      transition: {
+        duration: 0.4,
+        ease: "easeOut",
+      },
+    },
   };
 
-  const iconClass = 'w-16 h-16 sm:w-20 sm:h-20 transition-transform duration-300 group-hover:scale-125'; // Moved hover to parent motion.div for better tilt synergy
+
+  const iconClass = 'w-16 h-16 sm:w-20 sm:h-20 transition-transform duration-300 group-hover:scale-125';
 
   const SkillSection: React.FC<SkillSectionProps> = ({ title, icons }) => (
     <motion.div
       className="mb-10 p-6 rounded-xl border border-gray-700 bg-gray-900 transition-all duration-300 hover:bg-gray-800 hover:shadow-lg backdrop-blur-sm"
       variants={itemVariants}
-      initial="hidden" // Ensure initial state for individual sections
-      animate="show" // Animate individual sections
+      initial="hidden"
+      animate="show"
     >
       <h3 className="text-2xl font-bold mb-6 text-purple-400 border-b-2 border-purple-600 pb-2 inline-block">
         {title}
       </h3>
       <motion.div
         className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-7 xl:grid-cols-8 gap-6 justify-items-center mt-6"
-        variants={containerVariants} // Staggered animation for icons within the section
+        variants={containerVariants}
         initial="hidden"
         animate="show"
       >
         {icons.map((name: string, idx: number) => (
           <motion.div
             key={idx}
-            variants={itemVariants} // Apply item animation to each icon container
-            className="flex flex-col items-center group cursor-pointer" // Add group for hover effect on text
+            variants={itemVariants}
+            className="flex flex-col items-center group cursor-pointer"
           >
             <StackIcon name={name} className={iconClass} />
             <p className="text-center text-sm mt-2 text-gray-400 group-hover:text-white transition-colors duration-300 capitalize">
@@ -125,7 +133,6 @@ const Skills = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-950 to-black text-gray-100 font-sans relative overflow-hidden">
       {/* Background Gradients/Shapes for aesthetic */}
-      {/* Moved blob animation styles to a separate CSS file or utility classes if available */}
       <div className="absolute top-0 left-0 w-80 h-80 bg-purple-600 rounded-full mix-blend-multiply filter blur-xl opacity-30 animate-blob"></div>
       <div className="absolute top-0 right-0 w-80 h-80 bg-red-600 rounded-full mix-blend-multiply filter blur-xl opacity-30 animate-blob animation-delay-2000"></div>
       <div className="absolute bottom-0 left-1/4 w-80 h-80 bg-blue-600 rounded-full mix-blend-multiply filter blur-xl opacity-30 animate-blob animation-delay-4000"></div>
@@ -136,7 +143,7 @@ const Skills = () => {
         className={`flex-grow flex justify-center items-center p-4 relative z-10 transition-opacity duration-1000 ${isVisible ? 'opacity-100' : 'opacity-0'}`}
         initial="hidden"
         animate="show"
-        variants={containerVariants} // Initial animation for the whole content area
+        variants={containerVariants}
       >
         <div className="w-full max-w-7xl p-6 flex flex-col gap-12">
 
@@ -155,7 +162,7 @@ const Skills = () => {
           </p>
 
           {/* Grouped Skills */}
-          <div className="space-y-12"> {/* Removed motion.div here to apply variants directly to SkillSection */}
+          <div className="space-y-12">
             <SkillSection title="Languages" icons={["python", "java", "cplusplus", "typescript", "bash", "haskell"]} />
             <SkillSection title="Frontend" icons={["html5", "css3", "javascript", "react", "nextjs", "vuejs", "tailwindcss", "materialui", "framer", "shadcnui"]} />
             <SkillSection title="Backend & Databases" icons={["nodejs", "django", "pytorch", "mongodb", "mongoose", "mysql", "postgresql"]} />
@@ -176,12 +183,12 @@ const Skills = () => {
 
             <motion.div
               className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 px-4"
-              variants={containerVariants} // Stagger for certification cards
+              variants={containerVariants}
               initial="hidden"
               animate="show"
             >
               {certifications.map((cert: Certification, idx: number) => (
-                <Tilt key={idx} options={{ max: 15, scale: 1.05, speed: 400 }}> {/* Adjusted Tilt options for subtlety */}
+                <Tilt key={idx} options={{ max: 15, scale: 1.05, speed: 400 }}>
                   <motion.a
                     href={cert.link}
                     target="_blank"
@@ -189,9 +196,8 @@ const Skills = () => {
                     className={`block rounded-xl p-8 shadow-2xl transform transition-all duration-500 ease-in-out cursor-pointer
                       bg-gradient-to-br from-gray-800 to-gray-900 border border-gray-700 hover:border-purple-500
                       hover:shadow-purple-500/30 group relative overflow-hidden`}
-                    variants={itemVariants} // Apply item animation to each card
+                    variants={itemVariants}
                   >
-                    {/* Subtle border animation on hover */}
                     <div className="absolute inset-0 border-2 border-transparent rounded-xl transition-all duration-300 group-hover:border-purple-500 pointer-events-none"></div>
 
                     <h3 className="text-xl font-semibold mb-3 text-purple-300 group-hover:text-white transition-colors duration-300">
@@ -215,20 +221,7 @@ const Skills = () => {
         <p>Crafted with passion and precision.</p>
       </div>
 
-      {/* Tailwind CSS keyframes for blob animation - REMOVED from here */}
-      {/* These styles should be in your main CSS file (e.g., src/index.css or src/App.css) */}
-      {/* If you're using a global CSS file, ensure the following is present there: */}
-      {/*
-        @keyframes blob {
-          0% { transform: translate(0px, 0px) scale(1); }
-          33% { transform: translate(30px, -50px) scale(1.1); }
-          66% { transform: translate(-20px, 20px) scale(0.9); }
-          100% { transform: translate(0px, 0px) scale(1); }
-        }
-        .animate-blob { animation: blob 7s infinite cubic-bezier(0.6, 0.4, 0.4, 0.8); }
-        .animation-delay-2000 { animation-delay: 2s; }
-        .animation-delay-4000 { animation-delay: 4s; }
-      */}
+      {/* Reminder: Place blob animation styles in your global CSS file */}
     </div>
   );
 };
