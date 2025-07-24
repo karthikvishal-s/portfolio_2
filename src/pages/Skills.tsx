@@ -79,7 +79,7 @@ const Skills = () => {
   const iconClass = 'hover:scale-125 transition-transform duration-300 w-16 h-16 sm:w-20 sm:h-20'; // Slightly larger icons on hover
 
   const SkillSection: React.FC<SkillSectionProps> = ({ title, icons }) => (
-    <motion.div className="mb-10 p-6 rounded-xl border border-gray-700 bg-[#824eba] shadow-2xl backdrop-blur-sm"
+    <motion.div className="mb-10 p-6 rounded-xl transition border border-gray-700 translate-all duration-500 bg-[#824eba] hover:bg-[#8c59c2] hover:scale-110 shadow-2xl backdrop-blur-sm"
       variants={itemVariants} // Apply item animation to the section container
     >
       <h3 className="text-2xl font-bold mb-6 text-white border-b-2 border-purple-600 pb-2 inline-block">
@@ -121,7 +121,7 @@ const Skills = () => {
 
           {/* Heading */}
           <motion.h1
-            className="text-center font-raleway text-4xl mt-10 mb-10 transition-all duration-1000 bg-gradient-to-r from-[#8F00F0] to-red-500 text-transparent bg-clip-text transform transition duration-500  hover:scale-110"
+            className="text-center font-raleway text-4xl   transition-all duration-1000 bg-gradient-to-r from-[#8F00F0] to-red-500 text-transparent bg-clip-text transform transition duration-500  hover:scale-110"
            
             transition={{ duration: 1.8, ease: "easeOut" }}
           >
@@ -157,20 +157,20 @@ const Skills = () => {
               animate="show"
             >
               {certifications.map((cert: Certification, idx: number) => (
-                <Tilt key={idx} options={{ max: 15, scale: 1.05, speed: 400 }}>
+                <Tilt key={idx} options={{ max: 55, scale: 1.15, speed: 900 }}>
                   <motion.a
                     href={cert.link}
                     target="_blank"
                     rel="noopener noreferrer"
                     className={`block rounded-xl p-8 shadow-2xl transform transition-all duration-500 ease-in-out cursor-pointer
-                      bg-gradient-to-br from-gray-800 to-gray-900 border border-gray-700 hover:border-purple-500
+                      bg-gradient-to-br from-gray-600 to-gray-900 border border-gray-700 hover:border-purple-500
                       hover:shadow-purple-500/30 group relative overflow-hidden`}
                     variants={itemVariants}
                   >
                     {/* Subtle border animation on hover */}
                     <div className="absolute inset-0 border-2 border-transparent rounded-xl transition-all duration-300 group-hover:border-purple-500 pointer-events-none"></div>
 
-                    <h3 className="text-xl font-semibold mb-3 text-purple-300 group-hover:text-white transition-colors duration-300">
+                    <h3 className="text-xl font-semibold mb-3 text-purple-500 group-hover:text-white transition-colors duration-300">
                       {cert.title}
                     </h3>
                     <p className="text-base text-gray-300 leading-relaxed">
