@@ -132,13 +132,13 @@ const About = () => {
         {/* Connect */}
         {/* Competitive Examinations */}
 <motion.div
-  className="flex flex-col md:flex-row items-center gap-8 mb-12"
+  className="flex flex-col md:flex-row items-center gap-8 mb-12 lg:ml-20"
   initial={{ opacity: 0, y: 0 }}
   whileInView={{ opacity: 1, y: 0 }}
   viewport={{ once: true }}
   transition={{ duration: 1.6, ease: "easeOut" }}>
 <section className="mb-12">
-  <h2 className="text-center text-3xl font-semibold bg-gradient-to-r from-[#8F00F0] to-pink-500 text-transparent bg-clip-text mb-8 text-center underline-animation">
+  <h2 className="text-center text-3xl font-semibold bg-gradient-to-r from-[#8F00F0] to-pink-500 text-transparent bg-clip-text mb-8 underline-animation">
  Competitive Examinations
   </h2>
 
