@@ -65,7 +65,7 @@ const Skills = () => {
   const [isVisible, setIsVisible] = useState<boolean>(false);
 
   useEffect(() => {
-    const timeout = setTimeout(() => setIsVisible(true), 100);
+    const timeout = setTimeout(() => setIsVisible(true));
     return () => clearTimeout(timeout);
   }, []);
 
