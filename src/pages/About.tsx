@@ -62,7 +62,7 @@ const About = () => {
   <strong className='text-green-500'>Currently Exploring:</strong> Advanced ML, chatbot development, AI + fullstack integration, and system design for scalable applications.
 </p>
 
-<p className="text-sm  text-white dark:text-gray-300 leading-relaxed mb-6">
+<p className="text-sm text-white dark:text-gray-300 leading-relaxed mb-6">
    When I’m not coding, I love playing <strong>badminton</strong> and swinging my <strong>bat</strong> on the cricket field
 </p>
 
@@ -84,11 +84,11 @@ const About = () => {
   viewport={{ once: true }}
   transition={{ duration: 1.6, ease: "easeOut" }}>
 <section className="mb-12">
-  <h2 className=" text-3xl font-semibold bg-gradient-to-r from-[#8F00F0] to-pink-500 text-transparent bg-clip-text mb-8 text-center underline-animation">
+  <h2 className="text-center text-3xl font-semibold bg-gradient-to-r from-[#8F00F0] to-pink-500 text-transparent bg-clip-text mb-8 text-center underline-animation">
  Education
   </h2>
 
-  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 text-white">
+  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 text-white text-center">
     
     {/* 10th Standard */}
     <div className="border border-gray-500 p-6 rounded-lg shadow-md hover:scale-110 hover:shadow-lg transition duration-300">
@@ -153,55 +153,7 @@ Achievements
 
 
         {/* Connect */}
-        <motion.div
-  className="flex flex-col  items-center gap-8 mb-12"
-  initial={{ opacity: 0, y: 0 }}
-  whileInView={{ opacity: 1, y: 0 }}
-  viewport={{ once: true }}
-  transition={{ duration: 1.6, ease: "easeOut" }}>
-<section className="mt-16  p-6 sm:p-10 shadow-md backdrop-blur-md">
-  <h2 className="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-red-400 to-[#8F00F0] mb-6 text-center">
-     Connect With Me
-  </h2>
-
-  <p className="text-sm sm:text-base text-center text-gray-300 mb-6 max-w-2xl mx-auto leading-relaxed">
-    Always excited to collaborate on impactful projects, talk tech, or just connect. Feel free to reach out on any of the platforms below:
-  </p>
-
-  <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
-    {/* GitHub */}
-    <a
-      href="https://github.com/karthikvishal-s"
-      target="_blank"
-      rel="noopener noreferrer"
-      className="flex items-center gap-2 px-5 py-2 rounded-full bg-white/10 hover:bg-[#8F00F0]/80 transition text-white border border-white/10"
-    >
-     
-      <span>GitHub</span>
-    </a>
-
-    {/* LinkedIn */}
-    <a
-      href="https://linkedin.com/in/karthik-vishal-s-851921287"
-      target="_blank"
-      rel="noopener noreferrer"
-      className="flex items-center gap-2 px-5 py-2 rounded-full bg-white/10 hover:bg-blue-600/80 transition text-white border border-white/10"
-    >
-      
-      <span>LinkedIn</span>
-    </a>
-
-    {/* Email */}
-    <a
-      href="mailto:karthikvishal1506@gmail.com"
-      className="flex items-center gap-2 px-5 py-2 rounded-full bg-white/10 hover:bg-rose-500/80 transition text-white border border-white/10"
-    >
-      
-      <span>Email</span>
-    </a>
-  </div>
-</section>
-</motion.div>
+       
 
 
       </div>
