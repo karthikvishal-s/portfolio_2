@@ -60,7 +60,7 @@ const Home = () => {
             Karthik Vishal Subramaniyan
           </h1>
           <p className={`text-white mt-6 font-raleway text-sm transition-all duration-4000 ${loaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-[70%]'} `}>
-            Forging new ideas, contributing to the society
+          Creating with Purpose and Passion.
           </p>
 
           {/* Social Icons */}

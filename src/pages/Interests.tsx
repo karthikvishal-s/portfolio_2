@@ -18,7 +18,7 @@ const Interests = () => {
 
         {/* Download Button */}
         <a
-          href="/KarthikVishal-Resume.pdf"
+          href="src/assets/KarthikVishal.pdf"
           download
           className="mt-6 px-6 py-2 bg-purple-600 text-white hover:bg-purple-700 transition"
         >
