@@ -162,10 +162,10 @@ const Skills = () => {
           {/* Grouped Skills */}
           <motion.div className="space-y-12" variants={containerVariants}>
             <SkillSection title="Languages" icons={["python", "java", "c++", "typescript", "bash", "haskell"]} />
-            <SkillSection title="Frontend" icons={["html5", "css3", "js", "react", "nextjs", "vuejs", "tailwindcss", "materialui", "framer", "shadcnui"]} />
-            <SkillSection title="Backend & Databases" icons={["nodejs", "django","expressjs", "pytorch", "mongodb", "mongoose", "mysql", "postgresql"]} />
+            <SkillSection title="Frontend" icons={["html5", "css3", "js", "react", "nextjs", "vuejs","angular", "tailwindcss", "materialui", "framer", "shadcnui","bootstrap5"]} />
+            <SkillSection title="Backend & Databases" icons={["nodejs", "django","expressjs","firebase", "pytorch", "mongodb", "mongoose", "mysql", "postgresql"]} />
             <SkillSection title="DevOps & Cloud" icons={["gcloud","streamlit", "docker", "kubernetes", "vercel", "netlify", "ubuntu"]} />
-            <SkillSection title="Tools & Essentials" icons={["git", "github", "vscode", "postman", "figma", "notion", "electron", "markdown", "homebrew","cypress","jest"]} />
+            <SkillSection title="Tools & Essentials" icons={["git", "github", "vscode", "postman", "figma", "notion", "electron", "markdown", "homebrew","cypress","jest","copilotgithub"]} />
           </motion.div>
 
           {/* Certifications Section */}
