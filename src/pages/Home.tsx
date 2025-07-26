@@ -57,7 +57,7 @@ const Home = () => {
         {/* Title & Tagline */}
         <div className="text-center">
           <h1 className={`text-4xl font-raleway bg-gradient-to-r from-[#8F00F0] to-red-500 bg-clip-text text-transparent transition-all duration-3000  ${loaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-[70%]'}`}>
-            Karthik Vishal Subramaniyan
+            Karthik Vishal Subramaniyan 
           </h1>
           <p className={`text-white mt-6 font-raleway text-sm transition-all duration-4000 ${loaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-[70%]'} `}>
           Creating with Purpose and Passion.

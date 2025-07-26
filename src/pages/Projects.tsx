@@ -7,6 +7,7 @@ import portfolio1 from "../assets/portfolio-1.png";
 import sportshub from "../assets/sportshub.png";
 import qr from "../assets/qr.png";
 import trr from "../assets/trr2.png";
+import sgpa from "../assets/sgpa.png"; // Assuming you have an SGPA calculator image
 import united from "../assets/united.png";
 import ssh from "../assets/ssh.png"; // Assuming you have an SSH-related image
 import dh from "../assets/dh.png"; 
@@ -90,6 +91,16 @@ const ProjectData = [
     stacks: ["ReactJS", "CSS","Html","Javascript"],
     live:"https://shapesense.vercel.app/",
     code:"https://github.com/karthikvishal-s/ShapeSense",
+    time:2000
+
+  },
+  {
+    title: "SGPA Calculator",
+    pic: { src: sgpa },
+    description:"A simple SGPA calculator that allows students to calculate their Semester Grade Point Average (SGPA) based on their grades and credits.",
+    stacks: ["ReactJS", "CSS","Html","Javascript"],
+    live:"https://sgpacalculator1.vercel.app/",
+    code:"https://github.com/karthikvishal-s/SGPA_calculator",
     time:2000
 
   },
