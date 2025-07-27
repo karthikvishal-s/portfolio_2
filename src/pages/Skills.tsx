@@ -99,7 +99,7 @@ const Skills = () => {
   const iconClass = 'w-16 h-16 sm:w-20 sm:h-20 transition-transform duration-300 group-hover:scale-125';
 
   const SkillSection: React.FC<SkillSectionProps> = ({ title, icons }) => (
-    <motion.div className="mb-10 p-6 rounded-xl transition border border-gray-700 translate-all duration-1000 bg-black hover:bg-[#8c59c2] hover:scale-110 shadow-2xl backdrop-blur-sm"
+    <motion.div className="mb-10 p-6 rounded-xl transition border border-gray-700 translate-all duration-1000 md:bg-black   md:hover:bg-[#8c59c2] hover:scale-110 bg-[#8359c2] shadow-2xl backdrop-blur-sm"
       variants={itemVariants}
       initial="hidden"
       animate="show"
@@ -191,13 +191,13 @@ const Skills = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                     className={`block rounded-xl p-8 shadow-2xl transform transition-all duration-500 ease-in-out cursor-pointer
-                      bg-gradient-to-br from-orange-700 to-black border border-gray-700 hover:border-purple-500
+                      bg-gradient-to-br from-blue-700 to-black border border-gray-700 hover:border-purple-500
                       hover:shadow-purple-500/30 group relative overflow-hidden h-60 w-80`}
                     variants={itemVariants}
                   >
-                    <div className="absolute inset-0 border-2 border-transparent rounded-xl transition-all duration-300 group-hover:border-purple-500 pointer-events-none"></div>
+                    <div className="absolute inset-0 border-2 border-transparent rounded-xl transition-all duration-300 group-hover:border-purple-500 pointer-events-none sm:text-white"></div>
 
-                    <h3 className="text-xl font-semibold mb-3 text-purple-400 group-hover:text-white transition-colors duration-300">
+                    <h3 className="text-xl font-semibold mb-3 text-white group-hover:text-white transition-colors duration-300 md:text-black">
                       {cert.title}
                     </h3>
                    
