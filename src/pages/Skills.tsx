@@ -27,7 +27,7 @@ const certifications: Certification[] = [
   {
     title: "META Backend Developer Professional Certificate",
     link: "https://www.coursera.org/professional-certificates/meta-back-end-developer",
-    platform: "Coursera",
+    platform: "Meta",
     color: "bg-gradient-to-r from-purple-400 to-blue-500",
     description: "Learnt the skills needed to become a back-end developer, including Python, Django, and databases.",
     logo: <img src={meta} alt="Meta Logo" className="w-12 h-12 -mt-3" />
@@ -38,7 +38,7 @@ const certifications: Certification[] = [
     platform: "Coursera",
     color: "bg-gradient-to-r from-yellow-400 to-red-500",
     description: "Understood the basics of AI, its applications, and how it can be integrated into various fields,apart from technical aspects.",
-    logo: <SiCoursera className="w-12 h-12 -mt-3" />
+    logo: <SiCoursera className="w-12 h-12 -mt-3 text-blue-500" />
   },
   {
     title: "Web Development Intern/Mentorship",
@@ -204,7 +204,7 @@ const Skills = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                     className={`block rounded-xl p-8 shadow-2xl transform transition-all duration-500 ease-in-out cursor-pointer
-                      bg-gradient-to-br from-blue-700 to-black border border-gray-700 hover:border-purple-500
+                      bg-gradient-to-br from-purple-800 to-black border border-gray-700 hover:border-purple-500
                       hover:shadow-purple-500/30 group relative overflow-hidden h-80 w-80`}
                     variants={itemVariants}
                   >
@@ -223,7 +223,7 @@ const Skills = () => {
                     <div className="text-sm transition italic opacity-80 mt-10 text-gray-400 transition-colors duration-300 md:text-gray-700 md:group-hover:text-gray-300">
                       Offered by <span className="font-medium text-gray-400 md:text-gray-600 md:group-hover:text-purple-500 md:group-hover:font-bold">{cert.platform}</span>
                     </div>
-                    <div className='ml-auto text-4xl transition duration-300 text-purple-500 group-hover:text-purple-300 mt-10 md:grayscale-100 md:group-hover:grayscale-0'>
+                    <div className='ml-auto text-4xl transition duration-300 text-purple-500 group-hover:text-purple-500 mt-10 md:grayscale-100 md:group-hover:grayscale-0'>
                       {cert.logo}
                     </div>
                     </div>
