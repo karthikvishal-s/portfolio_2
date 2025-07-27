@@ -3,6 +3,9 @@ import Navbar from '../components/Navbar';
 import StackIcon from 'tech-stack-icons';
 import { motion, type Variants } from 'framer-motion'; // Import 'Variants' type
 import { Tilt } from 'react-tilt';
+import meta from '../assets/meta.png';
+import { SiCoursera, SiUdemy,} from 'react-icons/si';
+import launched from '../assets/launched.jpeg';
 
 // Important: Ensure you have these packages installed:
 // npm install framer-motion react-tilt tech-stack-icons
@@ -16,6 +19,8 @@ type Certification = {
   link: string;
   platform: string;
   color: string;
+  description:String;
+  logo: React.JSX.Element; // Optional: If you want to include a logo/icon for each certification
 };
 
 const certifications: Certification[] = [
@@ -23,25 +28,33 @@ const certifications: Certification[] = [
     title: "META Backend Developer Professional Certificate",
     link: "https://www.coursera.org/professional-certificates/meta-back-end-developer",
     platform: "Coursera",
-    color: "bg-gradient-to-r from-purple-400 to-blue-500"
+    color: "bg-gradient-to-r from-purple-400 to-blue-500",
+    description: "Learnt the skills needed to become a back-end developer, including Python, Django, and databases.",
+    logo: <img src={meta} alt="Meta Logo" className="w-12 h-12 -mt-3" />
   },
   {
     title: "AI For Everyone - (Nontechnical course)",
     link: "https://www.coursera.org/learn/ai-for-everyone",
     platform: "Coursera",
-    color: "bg-gradient-to-r from-yellow-400 to-red-500"
+    color: "bg-gradient-to-r from-yellow-400 to-red-500",
+    description: "Understood the basics of AI, its applications, and how it can be integrated into various fields,apart from technical aspects.",
+    logo: <SiCoursera className="w-12 h-12 -mt-3" />
   },
   {
     title: "Web Development Intern/Mentorship",
     link: "https://www.hackerrank.com/certificates/7f3d9d1c4e8f",
     platform: "LaunchEd Global",
-    color: "bg-gradient-to-r from-green-400 to-blue-600"
+    color: "bg-gradient-to-r from-green-400 to-blue-600",
+    description: "Hands-on experience in web development, including HTML, CSS, JavaScript, and React.Along with a capestone project on Cab Booking portal using MERN and RabbitMQ.",
+    logo: <img src={launched} alt="Launched Logo"className="w-12 h-12 -mt-4 rounded-full" />
   },
   {
     title: "The Complete Full Stack Web Development Bootcamp",
     link: "https://www.udemy.com/course/the-complete-web-development-bootcamp",
     platform: "Udemy",
-    color: "bg-gradient-to-r from-green-400 to-blue-600"
+    color: "bg-gradient-to-r from-green-400 to-blue-600",
+    description: "A comprehensive course covering both front-end and back-end web development, including HTML, CSS, JavaScript, Node.js, and databases.",
+    logo: <SiUdemy className="w-12 h-12 -mt-5" />
   }
 ];
 
@@ -192,17 +205,27 @@ const Skills = () => {
                     rel="noopener noreferrer"
                     className={`block rounded-xl p-8 shadow-2xl transform transition-all duration-500 ease-in-out cursor-pointer
                       bg-gradient-to-br from-blue-700 to-black border border-gray-700 hover:border-purple-500
-                      hover:shadow-purple-500/30 group relative overflow-hidden h-60 w-80`}
+                      hover:shadow-purple-500/30 group relative overflow-hidden h-80 w-80`}
                     variants={itemVariants}
                   >
                     <div className="absolute inset-0 border-2 border-transparent rounded-xl transition-all duration-300 group-hover:border-purple-500 pointer-events-none sm:text-white"></div>
 
-                    <h3 className="text-xl font-semibold mb-3 text-white group-hover:text-white transition-colors duration-300 md:text-black">
+                    <h3 className="text-xl text-center font-semibold mb-3 text-white group-hover:text-white transition-colors duration-300 md:text-gray-700">
                       {cert.title}
                     </h3>
+                    {cert.description && (
+  <p className="text-xs text-gray-400 mt-13  md:text-gray-700 md:group-hover:text-gray-300  transition-colors duration-300"> {/* Use line-clamp for neatness */}
+    {cert.description}
+  </p>
+)}
                    
-                    <div className="text-sm italic opacity-80 mt-16 text-gray-400">
-                      Offered by <span className="font-medium text-purple-200">{cert.platform}</span>
+                    <div className='flex '>
+                    <div className="text-sm transition italic opacity-80 mt-10 text-gray-400 transition-colors duration-300 md:text-gray-700 md:group-hover:text-gray-300">
+                      Offered by <span className="font-medium text-gray-400 md:text-gray-600 md:group-hover:text-purple-500 md:group-hover:font-bold">{cert.platform}</span>
+                    </div>
+                    <div className='ml-auto text-4xl transition duration-300 text-purple-500 group-hover:text-purple-300 mt-10 md:grayscale-100 md:group-hover:grayscale-0'>
+                      {cert.logo}
+                    </div>
                     </div>
                   </motion.a>
                 </Tilt>
