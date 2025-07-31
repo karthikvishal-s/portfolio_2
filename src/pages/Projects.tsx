@@ -13,6 +13,7 @@ import ssh from "../assets/ssh.png"; // Assuming you have an SSH-related image
 import dh from "../assets/dh.png"; 
 import shapes from "../assets/shapes.png"; // Assuming you have a shapesense image
 import movrec from "../assets/mov_rec.png"; // Assuming you have a movie recommender image
+import car from "../assets/car.png"; // Assuming you have a car image
 import port2 from "../assets/port2.png"; // Assuming you have a second portfolio image
 import { useEffect,useState} from 'react';
 
@@ -104,6 +105,16 @@ const ProjectData = [
     time:2000
 
   },
+  {
+    title: "Obstacle Avoidance Robot",
+    pic: { src: car },
+    description: "Built using Metallic C program, this car identifies and avoids obstacles using Ultrasonic sensor.Along with voice command features",
+    stacks: ["Embedded C", "Arduino", "HC-SR04", "Voice Command"],
+    live:"/",
+    code:"https://github.com/karthikvishal-s/Obstacle-Avoiding-Bluetooth-Voice-Controlled-Car",
+    time:2000
+  },
+
   {
     title: "QR Generator",
     pic: { src: qr },
