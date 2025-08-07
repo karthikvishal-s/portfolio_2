@@ -6,6 +6,7 @@ import pensieve from "../assets/pen2.png";
 import portfolio1 from "../assets/portfolio-1.png";
 import sportshub from "../assets/sportshub.png";
 import qr from "../assets/qr.png";
+import auth from "../assets/auth.png"; // Assuming you have an Authenticator image
 import trr from "../assets/trr2.png";
 import sgpa from "../assets/sgpa.png"; // Assuming you have an SGPA calculator image
 import united from "../assets/united.png";
@@ -64,6 +65,15 @@ const ProjectData = [
     stacks: ["Go", "Rust", "Python","SHH","Telnet", "NextJS", "MongoDB","TailwindCSS","NodeJS"],
     live:"",
     code:"https://github.com/karthikvishal-s/http-ssh.rfc",
+    time:2000
+  },
+  {
+    title: "Authenticator ",
+    pic: { src: auth },
+    description: "This project is to kickstart secure Role-Based authentication and authorization for web applications. It provides a robust foundation for managing user roles and permissions, ensuring secure access control.",
+    stacks: ["NextAuth","NextJS","ReactJS", "MongoDB","TailwindCSS","NodeJS"],
+    live:"",
+    code:"https://github.com/karthikvishal-s/NextAuth",
     time:2000
   },
   {
