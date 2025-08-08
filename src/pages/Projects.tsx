@@ -13,7 +13,7 @@ import sgpa from "../assets/sgpa.png"; // Assuming you have an SGPA calculator i
 import united from "../assets/united.png";
 import ssh from "../assets/ssh.png"; // Assuming you have an SSH-related image
 import dh from "../assets/dh.png"; 
-import shapes from "../assets/shapes.png"; // Assuming you have a shapesense image
+
 import movrec from "../assets/mov_rec.png"; // Assuming you have a movie recommender image
 import car from "../assets/car.png"; // Assuming you have a car image
 import port2 from "../assets/port2.png"; // Assuming you have a second portfolio image
