@@ -78,6 +78,16 @@ const ProjectData = [
     time:2000
   },
   {
+    title: "Pattern Slayer",
+    pic: { src: ds },
+    description:"An Interactive website designed specially for kids with Autism in Demon Slayer theme to recognize and lern visual patter with the assistance of audio direction.",
+    stacks: ["ReactJS", "CSS","Html","Javascript","TailwindCSS","FramerMotion"],
+    live:"https://shapesense.vercel.app/",
+    code:"https://github.com/karthikvishal-s/PatternSlayer",
+    time:2000
+
+  },
+  {
     title: "DocHelp - in Progress",
     pic: { src: dh },
     description: "(Still in Progress)   Designed to help doctors efficiently manage patient data in an orthopedic clinic.",
@@ -96,16 +106,7 @@ const ProjectData = [
     code:"https://github.com/karthikvishal-s/UnitEd",
     time:2000
   },
-  {
-    title: "Pattern Slayer",
-    pic: { src: ds },
-    description:"An Interactive website designed specially for Autistic kids in Demon Slayer theme to recognize and lern visual patter with the assistance of audio direction.",
-    stacks: ["ReactJS", "CSS","Html","Javascript","TailwindCSS","FramerMotion"],
-    live:"https://shapesense.vercel.app/",
-    code:"https://github.com/karthikvishal-s/PatternSlayer",
-    time:2000
 
-  },
   {
     title: "SGPA Calculator",
     pic: { src: sgpa },
