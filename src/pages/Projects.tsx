@@ -4,6 +4,7 @@ import kv from "../assets/kv.jpg";
 import noire from "../assets/noire2.png";
 import pensieve from "../assets/pen2.png";
 import portfolio1 from "../assets/portfolio-1.png";
+import ds from "../assets/ds.png"; // Assuming you have a data structures image
 import sportshub from "../assets/sportshub.png";
 import qr from "../assets/qr.png";
 import auth from "../assets/auth.png"; // Assuming you have an Authenticator image
@@ -96,12 +97,12 @@ const ProjectData = [
     time:2000
   },
   {
-    title: "ShapeSense",
-    pic: { src: shapes },
-    description:"An Interactive website designed specially for Autistic kids to recognize and lern visual patter with the assistance of audio direction.",
-    stacks: ["ReactJS", "CSS","Html","Javascript"],
+    title: "Pattern Slayer",
+    pic: { src: ds },
+    description:"An Interactive website designed specially for Autistic kids in Demon Slayer theme to recognize and lern visual patter with the assistance of audio direction.",
+    stacks: ["ReactJS", "CSS","Html","Javascript","TailwindCSS","FramerMotion"],
     live:"https://shapesense.vercel.app/",
-    code:"https://github.com/karthikvishal-s/ShapeSense",
+    code:"https://github.com/karthikvishal-s/PatternSlayer",
     time:2000
 
   },
