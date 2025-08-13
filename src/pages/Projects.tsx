@@ -3,6 +3,7 @@ import ProjectCard from '../components/ProjectCard';
 import kv from "../assets/kv.jpg";
 import noire from "../assets/noire2.png";
 import pensieve from "../assets/pen2.png";
+import sb from "../assets/SB-1.png"; // Assuming you have a sample data structures image
 import portfolio1 from "../assets/portfolio-1.png";
 import ds from "../assets/ds.png"; // Assuming you have a data structures image
 import sportshub from "../assets/sportshub.png";
@@ -50,6 +51,14 @@ const ProjectData = [
   code:"https://github.com/karthikvishal-s/Recommendation_System",
   time:2000
   },
+  {
+    title: "Soundaryas Boutique",  pic: { src: sb },
+    description: "An E-commerce platform for a boutique, offering a wide range of clothing and accessories.",
+    stacks: ["NextJS","ReactJS","TailwindCSS", "NodeJS", "ExpressJS", "MongoDB","Stripe"],
+    live:"https://soundaryas-boutique.vercel.app/",
+    code:"https://github.com/karthikvishal-s/soundaryas-boutique",
+    time:2000
+    },
   {
     title: "Pensieve",
     pic: { src: pensieve },
