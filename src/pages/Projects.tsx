@@ -52,7 +52,7 @@ const ProjectData = [
   time:2000
   },
   {
-    title: "Soundaryas Boutique",  pic: { src: sb },
+    title: "Soundaryas Boutique - in Progress",  pic: { src: sb },
     description: "An E-commerce platform for a boutique, offering a wide range of clothing and accessories.",
     stacks: ["NextJS","ReactJS","TailwindCSS", "NodeJS", "ExpressJS", "MongoDB","Stripe"],
     live:"https://soundaryas-boutique.vercel.app/",
