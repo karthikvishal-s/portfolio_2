@@ -2,6 +2,7 @@ import Navbar from '../components/Navbar';
 import ProjectCard from '../components/ProjectCard';
 import kv from "../assets/kv.jpg";
 import noire from "../assets/noire2.png";
+import clause from "../assets/clauseAI.png"; // Assuming you have a clause image
 import pensieve from "../assets/pen2.png";
 import sb from "../assets/SB-1.png"; // Assuming you have a sample data structures image
 import portfolio1 from "../assets/portfolio-1.png";
@@ -31,6 +32,16 @@ const ProjectData = [
     stacks: ["NextJS","ReactJS","TailwindCSS", "NodeJS", "ExpressJS", "MongoDB","Stripe"],
     live:"https://buynoire.vercel.app/",
     code:"https://github.com/karthikvishal-s/Noire",
+    time:2000
+  },
+  {
+    title: "ClauseAI",
+    pic: { src: clause },
+    description: "A social media platform for GOT fans to connect, share, and discuss their favorite series.",
+    stacks: ["NextJS", "ReactJS", "TailwindCSS","NextAuth", "NodeJS", "ExpressJS", "MongoDB","Vercel","Google OAuth" ],
+    
+    live:"https://varys.vercel.app/",
+    code:"https://github.com/karthikvishal-s/The-Ravens-Roost",
     time:2000
   },
   {
