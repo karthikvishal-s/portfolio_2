@@ -37,7 +37,7 @@ const ProjectData = [
   {
     title: "ClauseAI",
     pic: { src: clause },
-    description: "A social media platform for GOT fans to connect, share, and discuss their favorite series.",
+    description: "A contract analysis tool that leverages Generative AI to help users understand and manage legal documents more effectively.",
     stacks: ["NextJS", "ReactJS", "TailwindCSS","NextAuth", "NodeJS", "ExpressJS", "MongoDB","Vercel","Google OAuth" ],
     
     live:"https://varys.vercel.app/",
