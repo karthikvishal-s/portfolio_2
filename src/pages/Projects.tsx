@@ -40,8 +40,8 @@ const ProjectData = [
     description: "A contract analysis tool that leverages Generative AI to help users understand and manage legal documents more effectively.",
     stacks: ["NextJS", "ReactJS", "TailwindCSS","NextAuth", "NodeJS", "ExpressJS", "MongoDB","Vercel","Google OAuth" ],
     
-    live:"https://varys.vercel.app/",
-    code:"https://github.com/karthikvishal-s/The-Ravens-Roost",
+    live:"https://clauseai.vercel.app/",
+    code:"https://github.com/karthikvishal-s/ClauseAI",
     time:2000
   },
   {
