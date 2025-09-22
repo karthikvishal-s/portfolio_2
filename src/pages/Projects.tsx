@@ -2,7 +2,7 @@ import Navbar from '../components/Navbar';
 import ProjectCard from '../components/ProjectCard';
 import kv from "../assets/kv.jpg";
 import noire from "../assets/noire2.png";
-import clause from "../assets/clauseAI.png"; // Assuming you have a clause image
+// Assuming you have a clause image
 import pensieve from "../assets/pen2.png";
 import sb from "../assets/SB-1.png"; // Assuming you have a sample data structures image
 import portfolio1 from "../assets/portfolio-1.png";
@@ -15,6 +15,7 @@ import sgpa from "../assets/sgpa.png"; // Assuming you have an SGPA calculator i
 import united from "../assets/united.png";
 import ssh from "../assets/ssh.png"; // Assuming you have an SSH-related image
 import dh from "../assets/dh.png"; 
+import clauseai from "../assets/clauseai.jpg"
 
 import movrec from "../assets/mov_rec.png"; // Assuming you have a movie recommender image
 import car from "../assets/car.png"; // Assuming you have a car image
@@ -36,9 +37,9 @@ const ProjectData = [
   },
   {
     title: "ClauseAI",
-    pic: { src: clause },
+    pic: { src: clauseai },
     description: "A contract analysis tool that leverages Generative AI to help users understand and manage legal documents more effectively.",
-    stacks: ["NextJS", "ReactJS", "TailwindCSS","NextAuth", "NodeJS", "ExpressJS", "MongoDB","Vercel","Google OAuth" ],
+    stacks: ["NextJS", "Gemini","FastAPI","SupaBase","NLTK","PDFplumber","TailwindCSS","NextAuth","Vercel","Google OAuth" ],
     
     live:"https://clauseai.vercel.app/",
     code:"https://github.com/karthikvishal-s/ClauseAI",
