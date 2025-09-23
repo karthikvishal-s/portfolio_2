@@ -2,6 +2,7 @@ import Navbar from '../components/Navbar';
 import ProjectCard from '../components/ProjectCard';
 import kv from "../assets/kv.jpg";
 import noire from "../assets/noire2.png";
+import UI from "../assets/ui.jpg"
 // Assuming you have a clause image
 import pensieve from "../assets/pen2.png";
 import sb from "../assets/SB-1.png"; // Assuming you have a sample data structures image
@@ -137,6 +138,15 @@ const ProjectData = [
     code:"https://github.com/karthikvishal-s/SGPA_calculator",
     time:2000
 
+  },
+  {
+    title: "ImageUploader",
+    pic: { src: UI },
+    description: "A prototype to store images and videos in the cloud after securely down-scaling to optimal quality ",
+    stacks: ["NextJs", "TailwindCSS", "Cloudinary"],
+    live:"https://image-uploader-1swd.vercel.app",
+    code:"https://github.com/karthikvishal-s/ImageUploader",
+    time:2000
   },
   {
     title: "Obstacle Avoidance Robot",
