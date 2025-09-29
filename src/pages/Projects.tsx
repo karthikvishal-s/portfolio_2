@@ -28,6 +28,14 @@ const defaultPic = { src: kv };
 
 const ProjectData = [
   {
+    title: "Soundaryas Boutique",  pic: { src: sb },
+    description: "An E-commerce platform for a boutique, offering a wide range of clothing and accessories.",
+    stacks: ["NextJS","ReactJS","TailwindCSS", "NodeJS", "ExpressJS", "MongoDB","Stripe","Cloudinary"],
+    live:"https://soundaryas-boutique.vercel.app/",
+    code:"https://github.com/karthikvishal-s/soundaryas-boutique",
+    time:2000
+    },
+  {
     title: "Noire",
     description: "An E-commerce marketplace designed to empower small businesses and independant designers.",
     pic: { src: noire },
@@ -64,14 +72,7 @@ const ProjectData = [
   code:"https://github.com/karthikvishal-s/Recommendation_System",
   time:2000
   },
-  {
-    title: "Soundaryas Boutique - in Progress",  pic: { src: sb },
-    description: "An E-commerce platform for a boutique, offering a wide range of clothing and accessories.",
-    stacks: ["NextJS","ReactJS","TailwindCSS", "NodeJS", "ExpressJS", "MongoDB","Stripe"],
-    live:"https://soundaryas-boutique.vercel.app/",
-    code:"https://github.com/karthikvishal-s/soundaryas-boutique",
-    time:2000
-    },
+ 
   {
     title: "Pensieve",
     pic: { src: pensieve },
