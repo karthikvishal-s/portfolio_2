@@ -5,7 +5,7 @@ import noire from "../assets/noire2.png";
 import UI from "../assets/ui.jpg"
 // Assuming you have a clause image
 import pensieve from "../assets/pen2.png";
-import sb from "../assets/SB-1.png"; // Assuming you have a sample data structures image
+import sb from "../assets/soundaryas.jpg"; // Assuming you have a sample data structures image
 import portfolio1 from "../assets/portfolio-1.png";
 import ds from "../assets/ds.png"; // Assuming you have a data structures image
 import sportshub from "../assets/sportshub.png";
@@ -35,15 +35,7 @@ const ProjectData = [
     code:"https://github.com/karthikvishal-s/soundaryas-boutique",
     time:2000
     },
-  {
-    title: "Noire",
-    description: "An E-commerce marketplace designed to empower small businesses and independant designers.",
-    pic: { src: noire },
-    stacks: ["NextJS","ReactJS","TailwindCSS", "NodeJS", "ExpressJS", "MongoDB","Stripe"],
-    live:"https://buynoire.vercel.app/",
-    code:"https://github.com/karthikvishal-s/Noire",
-    time:2000
-  },
+
   {
     title: "ClauseAI",
     pic: { src: clauseai },
