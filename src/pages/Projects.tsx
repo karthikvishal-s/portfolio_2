@@ -1,7 +1,7 @@
 import Navbar from '../components/Navbar';
 import ProjectCard from '../components/ProjectCard';
 import kv from "../assets/kv.jpg";
-import noire from "../assets/noire2.png";
+
 import UI from "../assets/ui.jpg"
 // Assuming you have a clause image
 import pensieve from "../assets/pen2.png";
