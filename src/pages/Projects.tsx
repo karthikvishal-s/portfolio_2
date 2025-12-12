@@ -17,7 +17,7 @@ import united from "../assets/united.png";
 import ssh from "../assets/ssh.png"; // Assuming you have an SSH-related image
 import dh from "../assets/dh.png"; 
 import clauseai from "../assets/clauseai.jpg"
-
+import sale from "../assets/sale.png";
 import movrec from "../assets/mov_rec.png"; // Assuming you have a movie recommender image
 import car from "../assets/car.png"; // Assuming you have a car image
 import port2 from "../assets/port2.png"; // Assuming you have a second portfolio image
@@ -27,6 +27,14 @@ const defaultPic = { src: kv };
 
 
 const ProjectData = [
+  {
+    title: "Flash Sale Engine",  pic: { src: sale },
+    description: "A highly resilient, distributed architecture that uses Redis atomic locking and AWS SQS buffering to achieve zero oversells under extreme load, guaranteeing data integrity during flash sales.",
+    stacks: ["Redis","LuaScript","AWS SQS", "NodeJS","NextJS","ReactJS","TailwindCSS", "ExpressJS"],
+    live:"",
+    code:"https://github.com/karthikvishal-s/flash-sale-engine",
+    time:2000
+    },
   {
     title: "Soundaryas Boutique",  pic: { src: sb },
     description: "An E-commerce platform for a boutique, offering a wide range of clothing and accessories.",
