@@ -4,6 +4,7 @@ import kv from "../assets/kv.jpg";
 
 import UI from "../assets/ui.jpg"
 // Assuming you have a clause image
+import vg from "../assets/vig.png";
 import pensieve from "../assets/pen2.png";
 import sb from "../assets/soundaryas.jpg"; // Assuming you have a sample data structures image
 import portfolio1 from "../assets/portfolio-1.png";
@@ -27,6 +28,17 @@ const defaultPic = { src: kv };
 
 
 const ProjectData = [
+
+  {
+    title: "Vigilance",
+    pic: { src: vg },
+    description: "Engineered a real-time XGBoost fraud detection model optimized for risk, achieving a 56.9% Recall and 53.5% Precision to efficiently intercept fraudulent transactions while maintaining a low false-alert rate.",
+    stacks: ["Python","Jupyter Notebook","FastAPI","Streamlit","Pandas","Numpy","Scikit-Learn","xgBoost"],
+    live:"",
+    code:"",
+    time:2000
+
+  },
   {
     title: "Flash Sale Engine",  pic: { src: sale },
     description: "A highly resilient, distributed architecture that uses Redis atomic locking and AWS SQS buffering to achieve zero oversells under extreme load, guaranteeing data integrity during flash sales.",
