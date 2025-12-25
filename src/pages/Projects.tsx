@@ -33,7 +33,7 @@ const ProjectData = [
     title: "Faberge",
     pic: { src: fab },
     description: "Fabergé is a luxury AI-driven music curator that translates psychological `vibe paragraphs` into high-fidelity Spotify playlists, featuring advanced data visualization and regional industry alignment.",
-    stacks: ["'NextJS","Flask(py)","SupaBase","TailwindCSS","Recharts","Gemini Flash","ThreadPoolExecutor","Lucide-React"],
+    stacks: ["NextJS","Flask(py)","SupaBase","TailwindCSS","Recharts","Gemini Flash","ThreadPoolExecutor","Lucide-React"],
     live:"",
     code:"https://github.com/karthikvishal-s/Faberge",
     time:2000
