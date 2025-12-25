@@ -39,7 +39,6 @@ const ProjectData = [
     time:2000
 
   },
-
   {
     title: "Vigilance",
     pic: { src: vg },
@@ -48,7 +47,6 @@ const ProjectData = [
     live:"",
     code:"https://github.com/karthikvishal-s/Vigilance",
     time:2000
-
   },
   {
     title: "Flash Sale Engine",  pic: { src: sale },
@@ -66,7 +64,6 @@ const ProjectData = [
     code:"https://github.com/karthikvishal-s/soundaryas-boutique",
     time:2000
     },
-
   {
     title: "ClauseAI",
     pic: { src: clauseai },
@@ -95,7 +92,6 @@ const ProjectData = [
   code:"https://github.com/karthikvishal-s/Recommendation_System",
   time:2000
   },
- 
   {
     title: "Pensieve",
     pic: { src: pensieve },
@@ -141,7 +137,6 @@ const ProjectData = [
     live:"/",
     code:"https://github.com/karthikvishal-s/DocHelp",
     time:2000
-
   },
   {
     title: "UnitED",
@@ -152,7 +147,6 @@ const ProjectData = [
     code:"https://github.com/karthikvishal-s/UnitEd",
     time:2000
   },
-
   {
     title: "SGPA Calculator",
     pic: { src: sgpa },
@@ -161,7 +155,6 @@ const ProjectData = [
     live:"https://sgpacalculator1.vercel.app/",
     code:"https://github.com/karthikvishal-s/SGPA_calculator",
     time:2000
-
   },
   {
     title: "ImageUploader",
@@ -181,7 +174,6 @@ const ProjectData = [
     code:"https://github.com/karthikvishal-s/Obstacle-Avoiding-Bluetooth-Voice-Controlled-Car",
     time:2000
   },
-
   {
     title: "QR Generator",
     pic: { src: qr },
@@ -191,7 +183,6 @@ const ProjectData = [
     code:"https://github.com/karthikvishal-s/QR-generator",
     time:2000
   },
-  
   {
     title:"SportsHub",
     pic: { src: sportshub },
