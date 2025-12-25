@@ -10,6 +10,7 @@ import sb from "../assets/soundaryas.jpg"; // Assuming you have a sample data st
 import portfolio1 from "../assets/portfolio-1.png";
 import ds from "../assets/ds.png"; // Assuming you have a data structures image
 import sportshub from "../assets/sportshub.png";
+import fab from "../assets/fab.png"
 import qr from "../assets/qr.png";
 import auth from "../assets/auth.png"; // Assuming you have an Authenticator image
 import trr from "../assets/trr2.png";
@@ -28,6 +29,16 @@ const defaultPic = { src: kv };
 
 
 const ProjectData = [
+  {
+    title: "Faberge",
+    pic: { src: fab },
+    description: "Fabergé is a luxury AI-driven music curator that translates psychological `vibe paragraphs` into high-fidelity Spotify playlists, featuring advanced data visualization and regional industry alignment.",
+    stacks: ["'NextJS","Flask(py)","SupaBase","TailwindCSS","Recharts","Gemini Flash","ThreadPoolExecutor","Lucide-React"],
+    live:"",
+    code:"https://github.com/karthikvishal-s/Faberge",
+    time:2000
+
+  },
 
   {
     title: "Vigilance",
@@ -35,7 +46,7 @@ const ProjectData = [
     description: "Engineered a real-time XGBoost fraud detection model optimized for risk, achieving a 56.9% Recall and 53.5% Precision to efficiently intercept fraudulent transactions while maintaining a low false-alert rate.",
     stacks: ["Python","Jupyter Notebook","FastAPI","Streamlit","Pandas","Numpy","Scikit-Learn","xgBoost"],
     live:"",
-    code:"",
+    code:"https://github.com/karthikvishal-s/Vigilance",
     time:2000
 
   },
