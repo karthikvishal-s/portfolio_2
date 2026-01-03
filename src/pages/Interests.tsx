@@ -1,5 +1,5 @@
 import Navbar from '../components/Navbar'
-import resume from '../assets/cvcv.png'
+import resume from '../assets/kvcv.png'
 
 const Interests = () => {
   return (
@@ -18,7 +18,7 @@ const Interests = () => {
 
         {/* Download Button */}
         <a
-          href="src/assets/CV_new.pdf"
+          href="src/assets/karthik_new_resume.pdf"
           download
           className="mt-6 px-6 py-2 bg-purple-600 text-white hover:bg-purple-700 transition"
         >
