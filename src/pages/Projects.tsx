@@ -23,6 +23,7 @@ import sale from "../assets/sale.png";
 import movrec from "../assets/mov_rec.png"; // Assuming you have a movie recommender image
 import car from "../assets/car.png"; // Assuming you have a car image
 import port2 from "../assets/port2.png"; // Assuming you have a second portfolio image
+import van from "../assets/van.png"
 import { useEffect,useState} from 'react';
 
 const defaultPic = { src: kv };
@@ -63,6 +64,15 @@ const ProjectData = [
     live:"https://soundaryas-boutique.vercel.app/",
     code:"https://github.com/karthikvishal-s/soundaryas-boutique",
     time:2000
+    },
+    {
+      title: "Vanguard",
+      pic: { src: van },
+      description: "Built using Node and Express, this QR code generator allows users to create custom QR codes for various purposes.",
+      stacks: ["NodeJS", "ExpressJS", "TailwindCSS", "MongoDB"],
+      live:"/",
+      code:"https://github.com/karthikvishal-s/Vanguard",
+      time:2000
     },
   {
     title: "ClauseAI",
