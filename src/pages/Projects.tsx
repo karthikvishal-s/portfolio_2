@@ -68,8 +68,8 @@ const ProjectData = [
     {
       title: "Vanguard",
       pic: { src: van },
-      description: "Built using Node and Express, this QR code generator allows users to create custom QR codes for various purposes.",
-      stacks: ["NodeJS", "ExpressJS", "TailwindCSS", "MongoDB"],
+      description: "A secure, military-themed communication platform featuring role-based access control, encrypted messaging, and digital signature verification for tamper-proof data exchange.",
+      stacks: ["React","VanillaCSS","CryptoJS","JSEncrypt","NodeJS","ExpressJS","MongoDB","JWT","Bcrypt","Node-Forge","NodeMailer"],
       live:"/",
       code:"https://github.com/karthikvishal-s/Vanguard",
       time:2000
