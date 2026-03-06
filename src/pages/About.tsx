@@ -111,8 +111,8 @@ const About = () => {
       <h3 className="text-xl font-semibold text-[#8F00F0] mb-2 text-center">B.Tech – CSE</h3>
       <p className="text-sm">Amrita Vishwa Vidyapeetham</p>
       <p className="text-sm text-gray-300">Batch: 2023–2027</p>
-      <p className="mt-2 text-sm font-medium">CGPA: <span className="text-green-400">8.45 / 10</span></p>
-      <p className="text-xs text-gray-400 mt-1">Current: End of Semester 4</p>
+      <p className="mt-2 text-sm font-medium">CGPA: <span className="text-green-400">8.53 / 10</span></p>
+      <p className="text-xs text-gray-400 mt-1">Current: End of Semester 5</p>
     </div>
 
   </div>
