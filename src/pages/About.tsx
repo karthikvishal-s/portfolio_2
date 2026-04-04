@@ -1,5 +1,6 @@
 import Navbar from '../components/Navbar'
 import { motion } from 'framer-motion';
+import fidelityLogo from '../assets/fidelity_logo.png';
 
 
 const About = () => {
@@ -26,7 +27,73 @@ const About = () => {
   </motion.span>
 </h1>
 
-      
+
+        {/* Fidelity Internship Section */}
+        <motion.div
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.9, ease: 'easeOut' }}
+          className="mb-14 relative"
+        >
+          {/* Ambient glow blobs */}
+          <div className="absolute -top-10 -left-10 w-52 h-52 rounded-full bg-[#8F00F0] opacity-10 blur-3xl pointer-events-none" />
+          <div className="absolute -bottom-10 -right-10 w-52 h-52 rounded-full bg-green-500 opacity-10 blur-3xl pointer-events-none" />
+
+          {/* Card */}
+          <div className="relative rounded-2xl p-[1.5px] bg-gradient-to-br from-[#8F00F0] via-purple-500 to-green-500 shadow-2xl shadow-purple-900/40">
+            <div className="rounded-2xl bg-[#0a0a0a] px-8 py-8">
+
+              {/* Top row: logo + badge */}
+              <div className="flex flex-col sm:flex-row items-center sm:items-start justify-between gap-4 mb-6">
+                <div className="flex items-center gap-4">
+                  {/* Logo pill */}
+                  <div className="bg-white rounded-xl px-4 py-2 flex items-center shadow-lg shadow-green-900/30">
+                    <img src={fidelityLogo} alt="Fidelity Investments" className="h-8 object-contain" />
+                  </div>
+                </div>
+                {/* Internship badge */}
+                <span className="shrink-0 px-4 py-1.5 rounded-full text-xs font-semibold tracking-wider uppercase bg-gradient-to-r from-[#8F00F0] to-green-500 text-white shadow-md">
+                  LEAP Intern · Summer 2025
+                </span>
+              </div>
+
+              {/* Title */}
+              <h2 className="text-2xl sm:text-3xl font-bold bg-gradient-to-r from-white to-gray-400 text-transparent bg-clip-text mb-1">
+                Fidelity Investments
+              </h2>
+              <p className="text-green-400 text-sm font-semibold mb-4 tracking-wide">
+                LEAP Internship &nbsp;·&nbsp; Chennai, India
+              </p>
+
+              {/* Divider */}
+              <div className="w-full h-px bg-gradient-to-r from-[#8F00F0]/60 via-white/10 to-transparent mb-5" />
+
+              {/* Description */}
+              <p className="text-sm text-gray-300 leading-relaxed mb-6">
+                Selected for Fidelity's prestigious <strong className="text-white">LEAP (Learning Experiential Advancement Program)</strong> internship —
+                a highly competitive program designed for top engineering talent. Based out of the{' '}
+                <strong className="text-green-400">Chennai</strong> office, I am contributing to real-world financial technology initiatives,
+                collaborating with cross-functional teams, and building solutions that impact millions of investors globally.
+              </p>
+
+              {/* Highlights grid */}
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+                {[
+                  { label: 'Role', value: 'LEAP Intern' },
+                  { label: 'Location', value: 'Chennai, India' },
+                  { label: 'Duration', value: 'Summer 2025' },
+                ].map(({ label, value }) => (
+                  <div key={label} className="bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-center hover:border-purple-500/60 hover:bg-white/[0.08] transition duration-300">
+                    <p className="text-xs text-gray-500 uppercase tracking-widest mb-1">{label}</p>
+                    <p className="text-sm font-semibold text-white">{value}</p>
+                  </div>
+                ))}
+              </div>
+
+            </div>
+          </div>
+        </motion.div>
 
         {/* Profile */}
         <div className="flex flex-col md:flex-row items-center gap-8 mb-">
