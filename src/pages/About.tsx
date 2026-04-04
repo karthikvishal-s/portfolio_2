@@ -48,8 +48,8 @@ const About = () => {
               <div className="flex flex-col sm:flex-row items-center sm:items-start justify-between gap-4 mb-6">
                 <div className="flex items-center gap-4">
                   {/* Logo pill */}
-                  <div className="bg-white rounded-xl px-4 py-2 flex items-center shadow-lg shadow-green-900/30">
-                    <img src={fidelityLogo} alt="Fidelity Investments" className="h-8 object-contain" />
+                  <div className="bg-white/10 border border-white/20 rounded-xl px-5 py-3 flex items-center shadow-lg shadow-green-900/30 backdrop-blur-sm">
+                    <img src={fidelityLogo} alt="Fidelity Investments" className="h-16 object-contain opacity-90" />
                   </div>
                 </div>
                 {/* Internship badge */}
